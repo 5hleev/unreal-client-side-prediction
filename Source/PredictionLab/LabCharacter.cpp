@@ -7,6 +7,10 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
+#include "Misc/CommandLine.h"
+#include "Misc/Parse.h"
+#include "Misc/Paths.h"
+#include "UnrealClient.h"
 
 ALabCharacter::ALabCharacter(const FObjectInitializer& ObjectInitializer)
     : Super(ObjectInitializer.SetDefaultSubobjectClass<ULabMovement>(ACharacter::CharacterMovementComponentName))
@@ -34,6 +38,11 @@ ALabCharacter::ALabCharacter(const FObjectInitializer& ObjectInitializer)
     if (Cube.Succeeded()) Body->SetStaticMesh(Cube.Object);
 }
 ULabMovement* ALabCharacter::LabMovement() const { return CastChecked<ULabMovement>(GetCharacterMovement()); }
+void ALabCharacter::BeginPlay()
+{
+    Super::BeginPlay();
+    bAutoDemo = FParse::Param(FCommandLine::Get(), TEXT("LabAuto"));
+}
 void ALabCharacter::SetupPlayerInputComponent(UInputComponent* Input)
 {
     Super::SetupPlayerInputComponent(Input);
@@ -118,6 +127,13 @@ void ALabCharacter::ClientSprintPolicy_Implementation(bool bDenied)
 void ALabCharacter::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
+    if (bAutoDemo && IsLocallyControlled() && !HasAuthority()) AutoDemo(DeltaSeconds);
+    if (HasAuthority() && GetWorld()->GetTimeSeconds() >= NextTelemetry)
+    {
+        NextTelemetry = GetWorld()->GetTimeSeconds() + 1.0;
+        UE_LOG(LogTemp, Display, TEXT("LAB event=authority pawn=%s speed=%.1f max=%.1f locked=%d role=%d"),
+            *GetName(), GetVelocity().Size2D(), LabMovement()->GetMaxSpeed(), LabMovement()->bServerSprintLocked, int32(GetLocalRole()));
+    }
     if (IsLocallyControlled() && bResponsePending && LabMovement()->bWantsSprint &&
         !LabMovement()->bOwnerSprintDenied && LabMovement()->IsMovingOnGround() && GetVelocity().Size2D() > 475.f)
     {
@@ -125,5 +141,61 @@ void ALabCharacter::Tick(float DeltaSeconds)
         bResponsePending = false;
         UE_LOG(LogTemp, Display, TEXT("LAB event=response id=%u csp=%d response_ms=%.3f"),
             InputSequence, bPredictionEnabled, LastResponseMs);
+    }
+}
+
+void ALabCharacter::AutoDemo(float DeltaSeconds)
+{
+    // Real autonomous-proxy input for reproducible experiments. Opt-in via -LabAuto.
+    // No position writes, fake network events or synthetic measurement values.
+    AutoElapsed += DeltaSeconds;
+    if (AutoElapsed < 3.0) return;
+    const int32 Trial = int32((AutoElapsed - 3.0) / 4.0);
+    const double Within = FMath::Fmod(AutoElapsed - 3.0, 4.0);
+    if (Trial >= 23)
+    {
+        UE_LOG(LogTemp, Display, TEXT("LAB event=auto_complete corrections=%d replays=%d"),
+            LabMovement()->CorrectionCount, LabMovement()->ReplayCount);
+        FPlatformMisc::RequestExit(false);
+        bAutoDemo = false;
+        return;
+    }
+    if (Trial != AutoTrial)
+    {
+        if (bSprintHeld) SprintReleased();
+        AutoTrial = Trial;
+        bAutoPressed = false;
+        bAutoCaptured = false;
+        bAutoBeforeCaptured = false;
+        // 10 baseline trials, 10 predicted trials, rejection, unlock, recovery.
+        bPredictionEnabled = Trial >= 10;
+        if (Trial == 20 || Trial == 21) ServerToggleSprintLock();
+        UE_LOG(LogTemp, Display, TEXT("LAB event=trial trial=%d csp=%d"), Trial, bPredictionEnabled);
+    }
+    const float Sign = Trial % 2 == 0 ? 1.f : -1.f;
+    if (Within < 2.8) AddMovementInput(FVector::ForwardVector, Sign);
+    if (!bAutoPressed && Within >= 1.3)
+    {
+        SprintPressed();
+        bAutoPressed = true;
+    }
+    if (bSprintHeld && Within >= 2.7) SprintReleased();
+    if (!bAutoBeforeCaptured && Trial == 20 && Within >= 1.45)
+    {
+        FString Directory;
+        if (!FParse::Value(FCommandLine::Get(), TEXT("LabMedia="), Directory))
+            Directory = FPaths::Combine(FPaths::ProjectSavedDir(), TEXT("LabMedia"));
+        FScreenshotRequest::RequestScreenshot(FPaths::Combine(Directory, TEXT("correction_before.png")), false, false);
+        bAutoBeforeCaptured = true;
+    }
+    if (!bAutoCaptured && Within >= 2.2 && (Trial == 1 || Trial == 11 || Trial == 20))
+    {
+        FString Name = Trial == 1 ? TEXT("baseline_no_prediction.png") :
+            Trial == 11 ? TEXT("prediction_enabled.png") : TEXT("correction_example.png");
+        FString Directory;
+        if (!FParse::Value(FCommandLine::Get(), TEXT("LabMedia="), Directory))
+            Directory = FPaths::Combine(FPaths::ProjectSavedDir(), TEXT("LabMedia"));
+        FScreenshotRequest::RequestScreenshot(FPaths::Combine(Directory, Name), false, false);
+        bAutoCaptured = true;
     }
 }

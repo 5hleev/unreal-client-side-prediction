@@ -35,6 +35,19 @@ FNetworkPredictionData_Client* ULabMovement::GetPredictionData_Client() const
     return ClientPredictionData;
 }
 
+void ULabMovement::OnClientCorrectionReceived(FNetworkPredictionData_Client_Character& ClientData,
+    float TimeStamp, FVector NewLocation, FVector NewVelocity,
+    FMovementBaseInterfaceData* NewMovementBaseInterfaceData, FName NewBaseBoneName,
+    bool bHasBase, bool bBaseRelativePosition, uint8 ServerMovementMode, FVector ServerGravityDirection)
+{
+    ++CorrectionCount;
+    UE_LOG(LogTemp, Display, TEXT("LAB event=cmc_correction count=%d saved=%d error_cm=%.2f"),
+        CorrectionCount, ClientData.SavedMoves.Num(), FVector::Dist(CharacterOwner->GetActorLocation(), NewLocation));
+    Super::OnClientCorrectionReceived(ClientData, TimeStamp, NewLocation, NewVelocity,
+        NewMovementBaseInterfaceData, NewBaseBoneName, bHasBase, bBaseRelativePosition,
+        ServerMovementMode, ServerGravityDirection);
+}
+
 void FSavedMove_Lab::Clear()
 {
     Super::Clear();
@@ -50,15 +63,17 @@ bool FSavedMove_Lab::CanCombineWith(const FSavedMovePtr& NewMove, ACharacter* Ch
         return false;
     return Super::CanCombineWith(NewMove, Character, MaxDelta);
 }
-void FSavedMove_Lab::SetMoveFor(ACharacter* Character, float DeltaTime, FVector const& NewAccel,
+void FSavedMove_Lab::SetMoveFor(ACharacter* Character, float InDeltaTime, FVector const& NewAccel,
     FNetworkPredictionData_Client_Character& ClientData)
 {
-    Super::SetMoveFor(Character, DeltaTime, NewAccel, ClientData);
+    Super::SetMoveFor(Character, InDeltaTime, NewAccel, ClientData);
     bSavedSprint = CastChecked<ULabMovement>(Character->GetCharacterMovement())->bWantsSprint;
 }
 void FSavedMove_Lab::PrepMoveFor(ACharacter* Character)
 {
     Super::PrepMoveFor(Character);
-    CastChecked<ULabMovement>(Character->GetCharacterMovement())->bWantsSprint = bSavedSprint;
+    auto* Move = CastChecked<ULabMovement>(Character->GetCharacterMovement());
+    Move->bWantsSprint = bSavedSprint;
+    ++Move->ReplayCount;
     // Do not restore bOwnerSprintDenied from saved moves: server policy wins on replay.
 }

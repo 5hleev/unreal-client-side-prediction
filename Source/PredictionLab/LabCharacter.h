@@ -12,6 +12,7 @@ public:
     ALabCharacter(const FObjectInitializer& ObjectInitializer);
     virtual void SetupPlayerInputComponent(UInputComponent* Input) override;
     virtual void Tick(float DeltaSeconds) override;
+    virtual void BeginPlay() override;
     ULabMovement* LabMovement() const;
     UFUNCTION(Client, Reliable) void ClientSprintPolicy(bool bDenied);
     bool IsPredictionEnabled() const { return bPredictionEnabled; }
@@ -35,4 +36,12 @@ private:
     double PressTime = 0.0;
     double LastPolicyToggle = -10.0;
     uint32 LastBaselineRequest = 0;
+    void AutoDemo(float DeltaSeconds);
+    bool bAutoDemo = false;
+    double AutoElapsed = 0;
+    int32 AutoTrial = -1;
+    bool bAutoPressed = false;
+    bool bAutoCaptured = false;
+    bool bAutoBeforeCaptured = false;
+    double NextTelemetry = 0;
 };

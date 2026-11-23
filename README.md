@@ -7,26 +7,35 @@ PredictionLab — C++ проект вида от третьего лица: ACha
 Два режима переключаются F2; F3 создаёт серверный запрет для демонстрации коррекции.
 Ходьба в обоих режимах использует штатное предсказание CMC.
 
-**Состояние:** исходники и инструменты подготовлены. Unreal Engine на этом компьютере
-не обнаружен в проверенных местах; проект не собран и не запущен. Целевая версия — UE 5.6,
-фактическая совместимость требует сборки. Карта создаётся инструментом при первой сборке.
-Видео, реальные измерения и публикация в GitVerse ещё не выполнены.
+**Состояние:** проект собран на **UE 5.8.4 / MSVC 14.44.35230**. Карта создана,
+самостоятельная Windows-версия упакована. Реальные результаты двухпроцессных испытаний
+и подписанные скриншоты: [Results.md](docs/Results.md). GitVerse remote пока не предоставлен;
+публикация issues/PR и независимое ревью не выполнены.
+
+## Сдача на ноутбуке без UE
+
+Перенести содержимое `dist/Windows` или распаковать `dist/PredictionLab_Windows.zip`.
+Запустить `Start_Clean.bat`, затем `Start_Lag100.bat` и `Start_Loss175.bat`.
+Перед сменой профиля закрыть оба окна. Подробности: [инструкция для ноутбука](docs/Portable_Guide.md).
+`Prac_4.zip` содержит исходники/документы; `PredictionLab_Windows.zip` — готовую игру.
 
 ## Запуск на Windows
 
-Нужны Unreal Engine 5.6 и Visual Studio 2022 с Game development with C++,
+Для сборки нужны Unreal Engine 5.8 и Visual Studio 2022 / Build Tools с C++,
 MSVC и Windows SDK. Указать **корень установленного движка**, содержащий папку Engine:
 
 ```powershell
 cd prac_4
-powershell -ExecutionPolicy Bypass -File tools/build.ps1 -EngineRoot 'F:\UE_5.6'
-powershell -ExecutionPolicy Bypass -File tools/play.ps1 -EngineRoot 'F:\UE_5.6' -Profile Lag100
+powershell -ExecutionPolicy Bypass -File tools/build.ps1 -EngineRoot 'F:\Epic Games\UE_5.8'
+powershell -ExecutionPolicy Bypass -File tools/play.ps1 -EngineRoot 'F:\Epic Games\UE_5.8' -Profile Lag100
 ```
 
 Первый скрипт собирает Editor target и создаёт `Content/Maps/PredictionArena.umap`
 через встроенный Python Unreal. Второй запускает два видимых окна: listen server и клиент.
 Если клиент стартовал раньше готовности сервера, в клиентской консоли: `open 127.0.0.1:7777`.
-Путь `F:\UE_5.6` — пример, установленного движка по этому пути не обнаружено.
+Путь `F:\Epic Games\UE_5.8` соответствует установленному движку UE 5.8.4.
+На текущем компьютере кеши Intermediate/Saved и результат dist размещены через
+ссылки на F:/UE_Prac4_Build, чтобы не заполнять диск C:.
 
 Сначала выполните профиль `Clean`, затем `Lag100` и `Loss175`.
 Измеряйте отклик **в окне клиента**, не хоста. Закройте оба окна перед следующим профилем.
@@ -58,6 +67,7 @@ HUD показывает сетевую роль, режим, скорость, 
 - [Теория и ответы](docs/Defense.md).
 - [Задачи и текст Pull Request](docs/Git_Workflow.md).
 - [Правила записи доказательств](docs/media/README.md).
+- [Фактические результаты](docs/Results.md) и [статус проверки](docs/Verification.md).
 
 Логи каждого запуска: `Saved/Runs/<дата>_<профиль>/`. Извлечение фактических замеров:
 
@@ -72,3 +82,13 @@ python tools/analyze_logs.py Saved/Runs/<сеанс>/client.log --output docs/me
 Архив для передачи: `Prac_4.zip`; обновить `python tools/package_submission.py`.
 В архив входят исходники и документы; карта включается, если уже создана в Unreal.
 Кеши сборки и локальная Git-история в архив не включаются.
+
+Повторить автоматический опыт на готовой игре (23 попытки, около 95 секунд на профиль):
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/run_network_tests.ps1 -Render -Portable
+python tools/summarize_experiment.py docs/media/<новый_сеанс>
+```
+
+В итоговое сравнение берутся первые 10 попыток каждого режима; последние три —
+намеренный отказ и проверка восстановления. F3 доступен только как учебный инструмент.

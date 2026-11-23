@@ -6,9 +6,18 @@
 - `prediction_enabled.mp4` либо `prediction_enabled_*.png`.
 - `correction_example.mp4` либо `correction_example_*.png`.
 
-Сейчас файлов нет: Unreal Engine не запускался. Изображения интерфейса и замеры
-не подменяются рисунками, моделированием или синтетическими данными.
-Для каждого ролика записать профиль, версию UE, хеш исходников, дату и таймкоды.
-Если видео хранится в облаке, проверяемые ссылки и ключевые моменты внести в
-Prediction_Implementation.md. Скриншоты и логи положить в GitVerse.
-T5 должен содержать именно коррекцию CMC, а не только уведомление об отказе спринта.
+В текущей поставке вместо видео используется серия PNG, разрешённая методичкой.
+Версия UE 5.8.4, код 533874e8fd92a5cd218548acd1cd581d61902330.
+Все кадры сняты FScreenshotRequest в настоящем standalone-клиенте.
+
+| Файл | Содержание |
+|---|---|
+| baseline_no_prediction.png | Lag100, CSP OFF, отклик после RPC-ответа |
+| prediction_enabled.png | Lag100, CSP ON, локальное ускорение до серверного ответа |
+| correction_before.png | Loss175, trial=20: клиент ещё ожидает разрешённый спринт |
+| correction_example.png | Loss175, trial=20: максимум 450, known denial=1, выросли счётчики CMC/replay |
+
+Подробные подписи: [Evidence.md](../Evidence.md). Метаданные: session.txt.
+Полные журналы и дополнительные кадры: run_20261123_195522/Clean, Lag100, Loss175.
+portable_build.log содержит успешный BuildCookRun, portable_sha256.txt — SHA256 ZIP игры.
+Нативные корневые PNG побайтово совпадают с кадрами из каталогов сеанса.

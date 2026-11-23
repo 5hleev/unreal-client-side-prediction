@@ -42,7 +42,9 @@ def main():
             f'- Максимальная скорость в период серверного запрета по телеметрии: {max((float(x[0]) for x in locked), default=0):.1f} см/с.',
             f'- [Лог клиента](media/{args.run.name}/{directory.name}/client.log), [лог сервера](media/{args.run.name}/{directory.name}/host.log).', '']
     output = args.run.parent.parent / 'Results.md'
-    output.write_text('\n'.join(lines + ['', 'Метрика: нажатие Shift → скорость >475 см/с; перед нажатием ходьба 450 см/с.', '', *evidence]), encoding='utf-8')
+    output.write_text('\n'.join(lines + ['', 'Метрика: нажатие Shift → скорость >475 см/с; перед нажатием ходьба 450 см/с.',
+        'Запланировано по 10 попыток каждого режима. Колонка n содержит число реальных response; отсутствующие замеры не подменяются числами.',
+        'В CSV сохраняются также trial=20–22 (отказ и восстановление); они не входят в сравнительную таблицу.', '', *evidence]), encoding='utf-8')
     print(output)
 
 if __name__ == '__main__':

@@ -1,0 +1,23 @@
+Дата: 23.11.2026, Europe/Moscow.
+Сеанс: run_20261123_195522.
+UE: 5.8.4, CL 58902052, Windows x64 Development.
+Компилятор: MSVC 14.44.35230, SDK 10.0.22621.0.
+Код демонстрации: 533874e8fd92a5cd218548acd1cd581d61902330.
+Исполняемый файл: dist/Windows/PredictionLab/Binaries/Win64/PredictionLab.exe.
+Топология: listen server + отдельный клиент, UDP 7777, 127.0.0.1.
+UnrealEditor во время итоговых испытаний не запускался.
+Хост: nullrhi. Клиент: RenderOffscreen, 1280x720, t.MaxFPS 60.
+Ввод: -LabAuto, те же методы спринта и AddMovementInput, что при обычном управлении.
+Профили исходящей сети на ОБОИХ процессах:
+Clean: PktLag 0, PktLagVariance 0, PktLoss 0.
+Lag100: PktLag 100, PktLagVariance 0, PktLoss 0.
+Loss175: PktLag 175, PktLagVariance 25, PktLoss 5.
+Параметры подтверждены строками LogNet в журналах.
+Trial 0-9: baseline, trial 10-19: CSP, trial 20: отказ, 21-22: восстановление.
+Основная таблица: 59 фактических response (Clean baseline 9, остальные группы по 10).
+Clean trial=0: pre_speed=0, нет response; искусственное значение не подставлялось.
+Все 59 сравнительных response относятся к нажатиям при pre_speed=450.
+Все 3 сценария auto_complete, exit 0; на сервере по 2 Pawn.
+При серверном запрете скорость по телеметрии не превышала 450 см/с.
+Скриншоты: FScreenshotRequest, без редактирования; подписи в docs/Evidence.md.
+Скриншоты в корне media совпадают побайтово с оригиналами в каталогах сеанса.

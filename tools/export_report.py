@@ -9,7 +9,7 @@ import pymupdf
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / 'docs'
-SOURCES = ['Prediction_Implementation.md', 'Prediction_Test_Matrix.md', 'Launch_and_Defense.md', 'Defense.md', 'Verification.md']
+SOURCES = ['Prediction_Implementation.md', 'Results.md', 'Evidence.md', 'Prediction_Test_Matrix.md', 'Portable_Guide.md', 'Launch_and_Defense.md', 'Defense.md', 'Verification.md']
 
 def plain(text):
     return re.sub(r'\[([^]]+)\]\([^)]+\)', r'\1', text).replace('**', '').replace('`', '')
@@ -22,7 +22,10 @@ def blocks(source):
         i += 1
         if not line:
             continue
-        if line.startswith('|'):
+        picture = re.fullmatch(r'!\[([^]]*)\]\(([^)]+)\)', line)
+        if picture:
+            yield 'image', (picture[1], picture[2])
+        elif line.startswith('|'):
             rows = []
             while True:
                 cells = [plain(c.strip()) for c in line.strip('|').split('|')]
@@ -55,7 +58,7 @@ def main():
     normal.paragraph_format.space_after = Pt(6)
     title = 'Практическая работа №4'
     subtitle = 'Client-Side Prediction и Server Reconciliation в Unreal Engine'
-    status = 'Исходники подготовлены. Сборка UE и реальные испытания не выполнены.'
+    status = 'UE 5.8.4: проект собран. Реальные сетевые испытания и ограничения приведены в отчёте.'
     for text in [title, subtitle, 'Шлеев Максим Евгеньевич, ИКБО-21-23', status]:
         p = doc.add_paragraph(text)
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -64,7 +67,12 @@ def main():
         doc.add_page_break()
         content.append('<div class="section">')
         for kind, value in blocks(DOCS / name):
-            if kind == 'table':
+            if kind == 'image':
+                caption, filename = value
+                doc.add_picture(str(DOCS / filename), width=Cm(16))
+                doc.add_paragraph(caption)
+                content.append(f'<img src="{html.escape(filename)}" style="width:100%"><p>{html.escape(caption)}</p>')
+            elif kind == 'table':
                 table = doc.add_table(rows=0, cols=len(value[0]))
                 table.style = 'Table Grid'
                 content.append('<table>')
@@ -99,7 +107,9 @@ def main():
     td, th {border: 0.5pt solid #888; padding: 4pt; vertical-align: top;}
     th {background-color: #e6edf5;}
     '''
-    story = pymupdf.Story(html=''.join(content), user_css=css, archive=pymupdf.Archive('C:/Windows/Fonts'))
+    archive = pymupdf.Archive('C:/Windows/Fonts')
+    archive.add(str(DOCS))
+    story = pymupdf.Story(html=''.join(content), user_css=css, archive=archive)
     writer = pymupdf.DocumentWriter(str(DOCS / 'ПР4_Шлеев_ИКБО-21-23.pdf'))
     page = pymupdf.paper_rect('a4')
     more = True

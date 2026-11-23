@@ -9,3 +9,5 @@ __pycache__/
 Prac_4.zip
 build*.log
 dist/
+Build/
+docs/report_image_preview.png

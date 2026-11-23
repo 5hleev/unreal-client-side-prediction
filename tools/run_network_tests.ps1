@@ -1,12 +1,19 @@
 param(
     [string]$EngineRoot = 'F:\Epic Games\UE_5.8',
     [string[]]$Profiles = @('Clean','Lag100','Loss175'),
-    [switch]$Render
+    [switch]$Render,
+    [switch]$Portable
 )
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $project = Join-Path $projectRoot 'PredictionLab.uproject'
 $editor = Join-Path $EngineRoot 'Engine\Binaries\Win64\UnrealEditor-Cmd.exe'
+$projectArgument = '"' + $project + '" '
+if ($Portable) {
+    $editor = Join-Path $projectRoot 'dist\Windows\PredictionLab\Binaries\Win64\PredictionLab.exe'
+    $projectArgument = ''
+}
+if (!(Test-Path -LiteralPath $editor)) { throw "Executable missing: $editor" }
 $runRoot = Join-Path $projectRoot ('docs\media\run_' + (Get-Date -Format 'yyyyMMdd_HHmmss'))
 New-Item -ItemType Directory -Force $runRoot | Out-Null
 foreach ($profile in $Profiles) {
@@ -20,9 +27,9 @@ foreach ($profile in $Profiles) {
     New-Item -ItemType Directory -Force $run | Out-Null
     $shared = '-game -unattended -nosound -nosplash -NoLoadingScreen -NoScreenMessages -ResX=1280 -ResY=720 '
     $exec = '-ExecCmds="' + $network + ',p.NetShowCorrections 1,p.NetCorrectionLifetime 8,log LogNetPlayerMovement Verbose,t.MaxFPS 60"'
-    $hostArgs = '"' + $project + '" /Game/Maps/PredictionArena?listen ' + $shared + ' -nullrhi -port=7777 ' + $exec + ' -abslog="' + $run + '\host.log"'
+    $hostArgs = $projectArgument + '/Game/Maps/PredictionArena?listen ' + $shared + ' -nullrhi -port=7777 ' + $exec + ' -abslog="' + $run + '\host.log"'
     $clientRhi = if ($Render) { '-RenderOffscreen' } else { '-nullrhi' }
-    $clientArgs = '"' + $project + '" 127.0.0.1:7777 ' + $shared + ' ' + $clientRhi + ' -LabAuto -LabProfile=' + $profile + ' ' + $exec + ' -LabMedia="' + $run + '" -abslog="' + $run + '\client.log"'
+    $clientArgs = $projectArgument + '127.0.0.1:7777 ' + $shared + ' ' + $clientRhi + ' -LabAuto -LabProfile=' + $profile + ' ' + $exec + ' -LabMedia="' + $run + '" -abslog="' + $run + '\client.log"'
     $hostProcess = $null
     $clientProcess = $null
     try {

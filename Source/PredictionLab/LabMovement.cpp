@@ -48,6 +48,16 @@ void ULabMovement::OnClientCorrectionReceived(FNetworkPredictionData_Client_Char
         ServerMovementMode, ServerGravityDirection);
 }
 
+bool ULabMovement::ClientUpdatePositionAfterServerUpdate()
+{
+    // PrepMoveFor must restore historical flags during replay, but those flags
+    // must not overwrite the current live input after replay finishes.
+    const bool bLiveSprint = bWantsSprint;
+    const bool bReplayed = Super::ClientUpdatePositionAfterServerUpdate();
+    bWantsSprint = bLiveSprint;
+    return bReplayed;
+}
+
 void FSavedMove_Lab::Clear()
 {
     Super::Clear();

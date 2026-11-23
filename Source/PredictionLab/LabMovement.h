@@ -18,6 +18,7 @@ public:
     virtual float GetMaxSpeed() const override;
     virtual void UpdateFromCompressedFlags(uint8 Flags) override;
     virtual FNetworkPredictionData_Client* GetPredictionData_Client() const override;
+    virtual bool ClientUpdatePositionAfterServerUpdate() override;
     virtual void OnClientCorrectionReceived(FNetworkPredictionData_Client_Character& ClientData,
         float TimeStamp, FVector NewLocation, FVector NewVelocity,
         FMovementBaseInterfaceData* NewMovementBaseInterfaceData, FName NewBaseBoneName,

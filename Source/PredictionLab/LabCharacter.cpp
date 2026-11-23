@@ -11,6 +11,8 @@
 #include "Misc/Parse.h"
 #include "Misc/Paths.h"
 #include "UnrealClient.h"
+#include "Camera/CameraActor.h"
+#include "GameFramework/PlayerController.h"
 
 ALabCharacter::ALabCharacter(const FObjectInitializer& ObjectInitializer)
     : Super(ObjectInitializer.SetDefaultSubobjectClass<ULabMovement>(ACharacter::CharacterMovementComponentName))
@@ -74,7 +76,9 @@ void ALabCharacter::SprintPressed()
     PressTime = FPlatformTime::Seconds();
     LastResponseMs = -1.f;
     bResponsePending = true;
-    UE_LOG(LogTemp, Display, TEXT("LAB event=input id=%u csp=%d time=%.6f"), InputSequence, bPredictionEnabled, PressTime);
+    bBaselineApproved = false;
+    UE_LOG(LogTemp, Display, TEXT("LAB event=input id=%u csp=%d time=%.6f pre_speed=%.1f"),
+        InputSequence, bPredictionEnabled, PressTime, GetVelocity().Size2D());
     if (bPredictionEnabled) LabMovement()->bWantsSprint = true;
     else ServerBaselineSprint(true, InputSequence);
 }
@@ -103,6 +107,7 @@ void ALabCharacter::ServerBaselineSprint_Implementation(bool bPressed, uint32 Re
 void ALabCharacter::ClientBaselineSprint_Implementation(bool bAccepted, uint32 RequestId)
 {
     if (bPredictionEnabled || RequestId != InputSequence) return;
+    bBaselineApproved = bAccepted && bSprintHeld;
     LabMovement()->bWantsSprint = bAccepted && bSprintHeld;
     UE_LOG(LogTemp, Display, TEXT("LAB event=baseline_ack id=%u accepted=%d"), RequestId, bAccepted);
 }
@@ -134,7 +139,7 @@ void ALabCharacter::Tick(float DeltaSeconds)
         UE_LOG(LogTemp, Display, TEXT("LAB event=authority pawn=%s speed=%.1f max=%.1f locked=%d role=%d"),
             *GetName(), GetVelocity().Size2D(), LabMovement()->GetMaxSpeed(), LabMovement()->bServerSprintLocked, int32(GetLocalRole()));
     }
-    if (IsLocallyControlled() && bResponsePending && LabMovement()->bWantsSprint &&
+    if (IsLocallyControlled() && bResponsePending && (bPredictionEnabled || bBaselineApproved) && LabMovement()->bWantsSprint &&
         !LabMovement()->bOwnerSprintDenied && LabMovement()->IsMovingOnGround() && GetVelocity().Size2D() > 475.f)
     {
         LastResponseMs = float((FPlatformTime::Seconds() - PressTime) * 1000.0);
@@ -149,7 +154,27 @@ void ALabCharacter::AutoDemo(float DeltaSeconds)
     // Real autonomous-proxy input for reproducible experiments. Opt-in via -LabAuto.
     // No position writes, fake network events or synthetic measurement values.
     AutoElapsed += DeltaSeconds;
-    if (AutoElapsed < 3.0) return;
+    if (AutoElapsed < 3.0)
+    {
+        auto* Player = Cast<APlayerController>(Controller);
+        if (Player && !OverviewCamera)
+        {
+            const FVector Eye(-3000, -2000, 1800);
+            auto* Camera = GetWorld()->SpawnActor<ACameraActor>(Eye, (FVector(-1500, 0, 100) - Eye).Rotation());
+            OverviewCamera = Camera;
+            Player->SetViewTarget(Camera);
+        }
+        if (!bOverviewCaptured && AutoElapsed >= 1.7)
+        {
+            FString Directory;
+            if (!FParse::Value(FCommandLine::Get(), TEXT("LabMedia="), Directory))
+                Directory = FPaths::Combine(FPaths::ProjectSavedDir(), TEXT("LabMedia"));
+            FScreenshotRequest::RequestScreenshot(FPaths::Combine(Directory, TEXT("two_players.png")), false, false);
+            bOverviewCaptured = true;
+        }
+        if (Player && AutoElapsed >= 2.5) Player->SetViewTarget(this);
+        return;
+    }
     const int32 Trial = int32((AutoElapsed - 3.0) / 4.0);
     const double Within = FMath::Fmod(AutoElapsed - 3.0, 4.0);
     if (Trial >= 23)

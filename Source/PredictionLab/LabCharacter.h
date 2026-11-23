@@ -32,6 +32,7 @@ private:
     bool bPredictionEnabled = true;
     bool bSprintHeld = false;
     bool bResponsePending = false;
+    bool bBaselineApproved = false;
     uint32 InputSequence = 0;
     double PressTime = 0.0;
     double LastPolicyToggle = -10.0;
@@ -44,4 +45,6 @@ private:
     bool bAutoCaptured = false;
     bool bAutoBeforeCaptured = false;
     double NextTelemetry = 0;
+    UPROPERTY() TObjectPtr<AActor> OverviewCamera;
+    bool bOverviewCaptured = false;
 };

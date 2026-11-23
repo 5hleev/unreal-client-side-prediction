@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'Prac_4.zip'
 
 def main():
-    files = [ROOT / name for name in ['README.md', '.gitignore', 'PredictionLab.uproject']]
+    files = [ROOT / name for name in ['README.md', '.gitignore', '.gitattributes', 'PredictionLab.uproject']]
     for directory in ['Source', 'Config', 'Content', 'tools', 'docs']:
         base = ROOT / directory
         if base.exists():

@@ -2,7 +2,7 @@
 Сеанс: run_20261123_195522.
 UE: 5.8.4, CL 58902052, Windows x64 Development.
 Компилятор: MSVC 14.44.35230, SDK 10.0.22621.0.
-Код демонстрации: 533874e8fd92a5cd218548acd1cd581d61902330.
+Код демонстрации: aa8a730187ab1749aa3bdb549ec550d592becc2d.
 Исполняемый файл: dist/Windows/PredictionLab/Binaries/Win64/PredictionLab.exe.
 Топология: listen server + отдельный клиент, UDP 7777, 127.0.0.1.
 UnrealEditor во время итоговых испытаний не запускался.

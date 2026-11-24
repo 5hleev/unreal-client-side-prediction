@@ -7,7 +7,7 @@
 - `correction_example.mp4` либо `correction_example_*.png`.
 
 В текущей поставке вместо видео используется серия PNG, разрешённая методичкой.
-Версия UE 5.8.4, код 533874e8fd92a5cd218548acd1cd581d61902330.
+Версия UE 5.8.4, код aa8a730187ab1749aa3bdb549ec550d592becc2d.
 Все кадры сняты FScreenshotRequest в настоящем standalone-клиенте.
 
 | Файл | Содержание |

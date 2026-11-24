@@ -11,7 +11,8 @@ def main():
         base = ROOT / directory
         if base.exists():
             files.extend(p for p in base.rglob('*') if p.is_file() and '__pycache__' not in p.parts
-                         and p.name != 'report_image_preview.png')
+                         and not p.name.endswith('_preview.png')
+                         and not p.name.startswith('Инструкция_для_'))
     with zipfile.ZipFile(OUTPUT, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(files):
             archive.write(path, Path('prac_4') / path.relative_to(ROOT))

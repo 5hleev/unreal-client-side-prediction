@@ -10,4 +10,8 @@ Prac_4.zip
 build*.log
 dist/
 Build/
-docs/report_image_preview.png
+docs/*_preview.png
+/.publication/
+/docs/Инструкция_для_*.txt
+/Практи*работа*.pdf
+/описание работы из сдо.txt

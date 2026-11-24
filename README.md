@@ -9,10 +9,16 @@ PredictionLab — C++ проект вида от третьего лица: ACha
 
 **Состояние:** проект собран на **UE 5.8.4 / MSVC 14.44.35230**. Карта создана,
 самостоятельная Windows-версия упакована. Реальные результаты двухпроцессных испытаний
-и подписанные скриншоты: [Results.md](docs/Results.md). GitVerse remote пока не предоставлен;
-публикация issues/PR и независимое ревью не выполнены.
+и подписанные скриншоты: [Results.md](docs/Results.md).
+По согласованию с преподавателем работа опубликована на GitHub вместо GitVerse:
+[репозиторий](https://github.com/5hleev/unreal-client-side-prediction),
+[задачи и Pull Request](docs/Git_Workflow.md).
 
 ## Сдача на ноутбуке без UE
+
+Скачать **PredictionLab_Windows.zip** из [релиза v1.0.0](https://github.com/5hleev/unreal-client-side-prediction/releases/tag/v1.0.0)
+и распаковать. В том же релизе доступны архив исходников `Prac_4.zip` и отчёт PDF.
+Контрольная сумма готовой игры: [SHA256](docs/media/portable_sha256.txt).
 
 Перенести содержимое `dist/Windows` или распаковать `dist/PredictionLab_Windows.zip`.
 Запустить `Start_Clean.bat`, затем `Start_Lag100.bat` и `Start_Loss175.bat`.
@@ -25,6 +31,7 @@ PredictionLab — C++ проект вида от третьего лица: ACha
 MSVC и Windows SDK. Указать **корень установленного движка**, содержащий папку Engine:
 
 ```powershell
+git clone https://github.com/5hleev/unreal-client-side-prediction.git prac_4
 cd prac_4
 powershell -ExecutionPolicy Bypass -File tools/build.ps1 -EngineRoot 'F:\Epic Games\UE_5.8'
 powershell -ExecutionPolicy Bypass -File tools/play.ps1 -EngineRoot 'F:\Epic Games\UE_5.8' -Profile Lag100

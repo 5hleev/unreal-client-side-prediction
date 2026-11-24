@@ -9,6 +9,6 @@ $settings = switch ($Profile) {
 }
 $exec = '-ExecCmds="' + $settings + ',p.NetShowCorrections 1,p.NetCorrectionLifetime 8"'
 # Visible windows are intentional: these are the two interactive players.
-Start-Process -FilePath $exe -ArgumentList "/Game/Maps/PredictionArena?listen -windowed -ResX=900 -ResY=650 -WinX=0 -WinY=0 -port=7777 $exec"
+Start-Process -FilePath $exe -ArgumentList "/Game/Maps/PredictionArena?listen -NoScreenMessages -windowed -ResX=900 -ResY=650 -WinX=0 -WinY=0 -port=7777 $exec"
 Start-Sleep -Seconds 8
-Start-Process -FilePath $exe -ArgumentList "127.0.0.1:7777 -windowed -ResX=900 -ResY=650 -WinX=920 -WinY=0 $exec"
+Start-Process -FilePath $exe -ArgumentList "127.0.0.1:7777 -NoScreenMessages -windowed -ResX=900 -ResY=650 -WinX=920 -WinY=0 $exec"

@@ -17,7 +17,7 @@ $network = switch ($Profile) {
 $run = Join-Path $projectRoot ('Saved\Runs\' + (Get-Date -Format 'yyyyMMdd_HHmmss') + '_' + $Profile)
 New-Item -ItemType Directory -Force $run | Out-Null
 $quotedProject = '"' + $project + '"'
-$shared = '-game -windowed -ResX=960 -ResY=720 -nosound '
+$shared = '-game -NoScreenMessages -windowed -ResX=960 -ResY=720 -nosound '
 $exec = '-ExecCmds="' + $network + ',p.NetShowCorrections 1,p.NetCorrectionLifetime 8,log LogNetPlayerMovement Verbose"'
 # These are interactive game windows, intentionally visible for the demonstration.
 $hostArgs = "$quotedProject /Game/Maps/PredictionArena?listen $shared -port=7777 -WinX=0 -WinY=0 $exec -abslog=`"$run\host.log`""

@@ -14,6 +14,11 @@ PredictionLab — C++ проект вида от третьего лица: ACha
 [репозиторий](https://github.com/5hleev/unreal-client-side-prediction),
 [задачи и Pull Request](docs/Git_Workflow.md).
 
+## Видеодемонстрация
+
+[Скачать ролик MP4](https://github.com/5hleev/unreal-client-side-prediction/releases/download/v1.0.0/PredictionLab_Demo.mp4) — 01:04, 1080p, с русскими подписями.
+[Содержание, таймкоды и журналы записи](docs/Demo_Video.md).
+
 ## Сдача на ноутбуке без UE
 
 Скачать **PredictionLab_Windows.zip** из [релиза v1.0.0](https://github.com/5hleev/unreal-client-side-prediction/releases/tag/v1.0.0)

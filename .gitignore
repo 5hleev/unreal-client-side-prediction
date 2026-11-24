@@ -15,3 +15,5 @@ docs/*_preview.png
 /docs/Инструкция_для_*.txt
 /Практи*работа*.pdf
 /описание работы из сдо.txt
+/docs/media/video_*/
+/docs/media/PredictionLab_Demo.mp4

@@ -1,0 +1,1168 @@
+﻿Log file open, 11/23/26 19:59:15
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogProfilingDebugging: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogWindows: Custom abort handler registered for crash reporting.
+LogInit: Running DelayedAutoRegister Phase StartOfEnginePreInit
+LogCore: Display: UTS: The Unreal Trace Server binary is not available ('../../../Engine/Binaries/Win64/UnrealTraceServer.exe')
+LogTrace: Initializing trace...
+LogTrace: Finished trace initialization.
+LogCsvProfiler: Display: Metadata set : platform="Windows"
+LogCsvProfiler: Display: Metadata set : config="Development"
+LogCsvProfiler: Display: Metadata set : buildversion="++UE5+Release-5.8-CL-58902052"
+LogCsvProfiler: Display: Metadata set : engineversion="5.8.4-58902052+++UE5+Release-5.8"
+LogCsvProfiler: Display: Metadata set : enginereleaseversion="5.8.4"
+LogCsvProfiler: Display: Metadata set : os="Windows 10 (22H2) [10.0.19045.6456] "
+LogCsvProfiler: Display: Metadata set : cpu="AuthenticAMD|AMD Ryzen 5 7600X 6-Core Processor"
+LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+LogCsvProfiler: Display: Metadata set : pgoprofilingenabled="0"
+LogCsvProfiler: Display: Metadata set : ltoenabled="0"
+LogCsvProfiler: Display: Metadata set : asan="0"
+LogCsvProfiler: Display: Metadata set : mergedmodules="0"
+LogCsvProfiler: Display: Metadata set : compacttset="0"
+LogCsvProfiler: Display: Metadata set : commandline="" 127.0.0.1:7777 -game -unattended -nosound -nosplash -NoLoadingScreen -NoScreenMessages -ResX=1280 -ResY=720 -RenderOffscreen -LabAuto -LabProfile=Loss175 -ExecCmds="NetEmulation.PktLag 175,NetEmulation.PktLagVariance 25,NetEmulation.PktLoss 5,p.NetShowCorrections 1,p.NetCorrectionLifetime 8,log LogNetPlayerMovement Verbose,t.MaxFPS 60" -LabMedia=C:\Users\maksim\Desktop\4th_course\multiplayer\prac_4\docs\media\run_20261123_195522\Loss175 -abslog=C:\Users\maksim\Desktop\4th_course\multiplayer\prac_4\docs\media\run_20261123_195522\Loss175\client.log""
+LogCsvProfiler: Display: Metadata set : loginid="c7cb490e400a2080a8eca7904b8d1841"
+LogCsvProfiler: Display: Metadata set : llm="0"
+LogPakFile: Initializing PakPlatformFile
+LogIoDispatcher: Display: Mounted container '../../../PredictionLab/Content/Paks/global.utoc', Id='ffffffffffffffff', Order=0, Slot=0, Options=(None), Flags=(), HasSoftRefs=False
+LogPakFile: Display: Initialized I/O dispatcher file backend. Mounted the global container: ../../../PredictionLab/Content/Paks/global.utoc
+LogPakFile: Display: Found Pak file ../../../PredictionLab/Content/Paks/PredictionLab-Windows.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../PredictionLab/Content/Paks/PredictionLab-Windows.pak.
+LogIoDispatcher: Display: Mounted container '../../../PredictionLab/Content/Paks/PredictionLab-Windows.utoc', Id='653df6881d3dfcce', Order=4, Slot=0, Options=(None), Flags=(Compressed|Indexed), HasSoftRefs=False
+LogFilePackageStore: Mounting container: Id=653df6881d3dfcce, Order=4, NumPackages=494
+LogPakFile: Display: Mounted IoStore container "../../../PredictionLab/Content/Paks/PredictionLab-Windows.utoc"
+LogPakFile: Display: Mounted Pak file '../../../PredictionLab/Content/Paks/PredictionLab-Windows.pak', mount point: '../../../'
+LogCsvProfiler: Display: Metadata set : zenstreaming="0"
+LogInit: Running DelayedAutoRegister Phase FileSystemReady
+LogInit: Running DelayedAutoRegister Phase TaskGraphSystemReady
+LogStats: Stats thread started at 0.101094
+LogInit: Running DelayedAutoRegister Phase StatSystemReady
+LogCsvProfiler: Display: Metadata set : systemresolution.resx="1280"
+LogCsvProfiler: Display: Metadata set : systemresolution.resy="720"
+LogICUInternationalization: OS requested locale 'ru-RU' is not supported. Using the OS requested language of 'ru-RU' as the locale.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +3:00, Platform Override: ''
+LogInit: Session CrashGUID >====================================================
+         Session CrashGUID >   UECC-Windows-9E4ECF7341E0D720586D559C79167A4A
+         Session CrashGUID >====================================================
+LogConfig: No local boot hotfix file found at: [../../../PredictionLab/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
+LogInit: Running DelayedAutoRegister Phase IniSystemReady
+LogAudio: Display: Audio Device Manager not initializing due to all audio being disabled. If this is not intentional, please check command line arguments for "-nosound".
+LogPluginManager: Mounting Engine plugin Paper2D
+LogPluginManager: Mounting Engine plugin AISupport
+LogPluginManager: Mounting Engine plugin EnvironmentQueryEditor
+LogAssetRegistry: Premade AssetRegistry loaded from '../../../PredictionLab/AssetRegistry.bin'.
+LogPluginManager: Mounting Engine plugin ACLPlugin
+LogPluginManager: Mounting Engine plugin AnimationData
+LogPluginManager: Mounting Engine plugin AnimatorKit
+LogPluginManager: Mounting Engine plugin ControlRigModules
+LogPluginManager: Mounting Engine plugin ControlRigSpline
+LogPluginManager: Mounting Engine plugin ControlRig
+LogPluginManager: Mounting Engine plugin DeformerGraph
+LogPluginManager: Mounting Engine plugin EaseCurveTool
+LogPluginManager: Mounting Engine plugin GameplayInsights
+LogPluginManager: Mounting Engine plugin IKRig
+LogPluginManager: Mounting Engine plugin PhysicsControl
+LogPluginManager: Mounting Engine plugin RigLogic
+LogPluginManager: Mounting Engine plugin SkeletalMeshModelingTools
+LogPluginManager: Mounting Engine plugin TweeningUtils
+LogPluginManager: Mounting Engine plugin AudioInsightsRuntime
+LogPluginManager: Mounting Engine plugin AudioInsights
+LogPluginManager: Mounting Engine plugin AudioModulationInsights
+LogPluginManager: Mounting Engine plugin BaseMaterial
+LogPluginManager: Mounting Engine plugin CameraShakePreviewer
+LogPluginManager: Mounting Engine plugin EngineCameras
+LogPluginManager: Mounting Engine plugin GameplayCameras
+LogPluginManager: Mounting Engine plugin ChaosCloth
+LogPluginManager: Mounting Engine plugin ChaosVD
+LogPluginManager: Mounting Engine plugin CompositeCore
+LogPluginManager: Mounting Engine plugin OodleNetwork
+LogPluginManager: Mounting Engine plugin Dataflow
+LogPluginManager: Mounting Engine plugin AnimationSharing
+LogPluginManager: Mounting Engine plugin ConcertMain
+LogPluginManager: Mounting Engine plugin ConcertSyncClient
+LogPluginManager: Mounting Engine plugin ConcertSyncCore
+LogPluginManager: Mounting Engine plugin ConcertSharedSlate
+LogPluginManager: Mounting Engine plugin DumpGPUServices
+LogPluginManager: Mounting Engine plugin GPUReshape
+LogPluginManager: Mounting Engine plugin NamingTokens
+LogPluginManager: Mounting Engine plugin PixWinPlugin
+LogPluginManager: Mounting Engine plugin PluginUtils
+LogPluginManager: Mounting Engine plugin ProjectLauncher
+LogPluginManager: Mounting Engine plugin RenderDocPlugin
+LogPluginManager: Mounting Engine plugin FileSandbox
+LogPluginManager: Mounting Engine plugin UObjectPlugin
+LogPluginManager: Mounting Engine plugin AssetManagerEditor
+LogPluginManager: Mounting Engine plugin BlueprintHeaderView
+LogPluginManager: Mounting Engine plugin BlueprintMaterialTextureNodes
+LogPluginManager: Mounting Engine plugin ColorGrading
+LogPluginManager: Mounting Engine plugin ConsoleVariables
+LogPluginManager: Mounting Engine plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting Engine plugin CurveEditorTools
+LogPluginManager: Mounting Engine plugin DataValidation
+LogPluginManager: Mounting Engine plugin EditorScriptingUtilities
+LogPluginManager: Mounting Engine plugin EngineAssetDefinitions
+LogPluginManager: Mounting Engine plugin FacialAnimation
+LogPluginManager: Mounting Engine plugin GeometryMode
+LogPluginManager: Mounting Engine plugin MaterialAssetWizard
+LogPluginManager: Mounting Engine plugin LightMixer
+LogPluginManager: Mounting Engine plugin ObjectMixer
+LogPluginManager: Mounting Engine plugin ProxyLODPlugin
+LogPluginManager: Mounting Engine plugin SequencerAnimTools
+LogPluginManager: Mounting Engine plugin SpeedTreeImporter
+LogPluginManager: Mounting Engine plugin UMGWidgetPreview
+LogPluginManager: Mounting Engine plugin UVEditor
+LogPluginManager: Mounting Engine plugin EnhancedInput
+LogPluginManager: Mounting Engine plugin DatasmithContent
+LogPluginManager: Mounting Engine plugin GLTFExporter
+LogPluginManager: Mounting Engine plugin VariantManagerContent
+LogPluginManager: Mounting Engine plugin VariantManager
+LogPluginManager: Mounting Engine plugin Scribble
+LogPluginManager: Mounting Engine plugin AutomationUtils
+LogPluginManager: Mounting Engine plugin BackChannel
+LogPluginManager: Mounting Engine plugin Buoyancy
+LogPluginManager: Mounting Engine plugin ChaosCaching
+LogPluginManager: Mounting Engine plugin ChaosEditor
+LogPluginManager: Mounting Engine plugin ChaosNiagara
+LogPluginManager: Mounting Engine plugin ChaosSolverPlugin
+LogPluginManager: Mounting Engine plugin ChaosUserDataPT
+LogPluginManager: Mounting Engine plugin CharacterAI
+LogPluginManager: Mounting Engine plugin ControlRigPhysics
+LogPluginManager: Mounting Engine plugin EditorDataStorageFeatures
+LogPluginManager: Mounting Engine plugin EditorDataStorage
+LogPluginManager: Mounting Engine plugin EditorPerformance
+LogPluginManager: Mounting Engine plugin EditorTRSGizmo
+LogPluginManager: Mounting Engine plugin Fracture
+LogPluginManager: Mounting Engine plugin FullBodyIK
+LogPluginManager: Mounting Engine plugin GeometryCollectionPlugin
+LogPluginManager: Mounting Engine plugin GeometryDataflow
+LogPluginManager: Mounting Engine plugin GizmoFramework
+LogPluginManager: Mounting Engine plugin GlobalConfigurationData
+LogPluginManager: Mounting Engine plugin InterchangeAxfAssets
+LogPluginManager: Mounting Engine plugin Landmass
+LogPluginManager: Mounting Engine plugin LevelSequenceNavigatorBridge
+LogPluginManager: Mounting Engine plugin LocalizableMessage
+LogPluginManager: Mounting Engine plugin MutableAssetUserData
+LogPluginManager: Mounting Engine plugin NFORDenoise
+LogPluginManager: Mounting Engine plugin PlanarCut
+LogPluginManager: Mounting Engine plugin PlatformCrypto
+LogPluginManager: Mounting Engine plugin PythonScriptPlugin
+LogPluginManager: Mounting Engine plugin RuntimeTelemetry
+LogPluginManager: Mounting Engine plugin ToolPresets
+LogPluginManager: Mounting Engine plugin Water
+LogPluginManager: Mounting Engine plugin Cascade
+LogPluginManager: Mounting Engine plugin NiagaraPreviewContent
+LogPluginManager: Mounting Engine plugin NiagaraSimCaching
+LogPluginManager: Mounting Engine plugin Niagara
+LogPluginManager: Mounting Engine plugin Fab
+LogPluginManager: Mounting Engine plugin AlembicImporter
+LogPluginManager: Mounting Engine plugin InterchangeAssets
+LogPluginManager: Mounting Engine plugin InterchangeEditor
+LogPluginManager: Mounting Engine plugin Interchange
+LogPluginManager: Mounting Engine plugin AvfMedia
+LogPluginManager: Mounting Engine plugin ImgMedia
+LogPluginManager: Mounting Engine plugin MP4Utilities
+LogPluginManager: Mounting Engine plugin MediaCompositing
+LogPluginManager: Mounting Engine plugin MediaPlate
+LogPluginManager: Mounting Engine plugin TmvMedia
+LogPluginManager: Mounting Engine plugin WebMMedia
+LogPluginManager: Mounting Engine plugin WmfMedia
+LogPluginManager: Mounting Engine plugin MeshPainting
+LogPluginManager: Mounting Engine plugin TcpMessaging
+LogPluginManager: Mounting Engine plugin UdpMessaging
+LogPluginManager: Mounting Engine plugin MetaHumanSDK
+LogPluginManager: Mounting Engine plugin ActorSequence
+LogPluginManager: Mounting Engine plugin LevelSequenceEditor
+LogPluginManager: Mounting Engine plugin SequenceValidator
+LogPluginManager: Mounting Engine plugin SequencerScripting
+LogPluginManager: Mounting Engine plugin TemplateSequence
+LogPluginManager: Mounting Engine plugin Mutable
+LogPluginManager: Mounting Engine plugin NNEDenoiser
+LogPluginManager: Mounting Engine plugin NNERuntimeORT
+LogPluginManager: Mounting Engine plugin OnlineBase
+LogPluginManager: Mounting Engine plugin OnlineServices
+LogPluginManager: Mounting Engine plugin OnlineSubsystemNull
+LogPluginManager: Mounting Engine plugin OnlineSubsystemUtils
+LogPluginManager: Mounting Engine plugin OnlineSubsystem
+LogPluginManager: Mounting Engine plugin PCG
+LogPluginManager: Mounting Engine plugin AutomatedPerfTestTools
+LogPluginManager: Mounting Engine plugin LauncherChunkInstaller
+LogPluginManager: Mounting Engine plugin ActorLayerUtilities
+LogPluginManager: Mounting Engine plugin AndroidFileServer
+LogPluginManager: Mounting Engine plugin AndroidPermission
+LogPluginManager: Mounting Engine plugin AppleImageUtils
+LogPluginManager: Mounting Engine plugin ArchVisCharacter
+LogPluginManager: Mounting Engine plugin AssetTags
+LogPluginManager: Mounting Engine plugin AudioCapture
+LogPluginManager: Mounting Engine plugin AudioSynesthesia
+LogPluginManager: Mounting Engine plugin AudioWidgets
+LogPluginManager: Mounting Engine plugin CableComponent
+LogPluginManager: Mounting Engine plugin ChunkDownloader
+LogPluginManager: Mounting Engine plugin ComputeFramework
+LogPluginManager: Mounting Engine plugin CustomMeshComponent
+LogPluginManager: Mounting Engine plugin SQLiteCore
+LogPluginManager: Mounting Engine plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin GeometryCache
+LogPluginManager: Mounting Engine plugin GeometryProcessing
+LogPluginManager: Mounting Engine plugin GooglePAD
+LogPluginManager: Mounting Engine plugin HairStrands
+LogPluginManager: Mounting Engine plugin InputDebugging
+LogPluginManager: Mounting Engine plugin LocationServicesBPLibrary
+LogPluginManager: Mounting Engine plugin MeshModelingToolset
+LogPluginManager: Mounting Engine plugin Metasound
+LogPluginManager: Mounting Engine plugin MobilePatchingUtils
+LogPluginManager: Mounting Engine plugin ModelViewViewModel
+LogPluginManager: Mounting Engine plugin MsQuic
+LogPluginManager: Mounting Engine plugin ProceduralMeshComponent
+LogPluginManager: Mounting Engine plugin PropertyAccessEditor
+LogPluginManager: Mounting Engine plugin PropertyBindingUtils
+LogPluginManager: Mounting Engine plugin ResonanceAudio
+LogPluginManager: Mounting Engine plugin RigVM
+LogPluginManager: Mounting Engine plugin SignificanceManager
+LogPluginManager: Mounting Engine plugin SkeletalMerging
+LogPluginManager: Mounting Engine plugin SoundFields
+LogPluginManager: Mounting Engine plugin StateTree
+LogPluginManager: Mounting Engine plugin Synthesis
+LogPluginManager: Mounting Engine plugin WaveTable
+LogPluginManager: Mounting Engine plugin WebMMoviePlayer
+LogPluginManager: Mounting Engine plugin WindowsDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin WindowsMoviePlayer
+LogPluginManager: Mounting Engine plugin XInputDevice
+LogPluginManager: Mounting Engine plugin InterchangeTests
+LogPluginManager: Mounting Engine plugin TraceUtilities
+LogPluginManager: Mounting Engine plugin Takes
+LogPluginManager: Mounting Engine plugin WorldMetrics
+LogInit: Running DelayedAutoRegister Phase EarliestPossiblePluginsLoaded
+LogConfig: Applying CVar settings from Section [/Script/CompositeCore.CompositeCorePluginSettings] File [Engine]
+LogWindows: Failed to load 'WinPixGpuCapturer.dll' (GetLastError=126)
+LogWindows: File 'WinPixGpuCapturer.dll' does not exist
+PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
+LogConfig: Applying CVar settings from Section [/Script/RenderDocPlugin.RenderDocPluginSettings] File [Engine]
+RenderDocPlugin: Display: RenderDoc plugin will not be loaded. Use '-AttachRenderDoc' on the cmd line or enable 'renderdoc.AutoAttach' in the plugin settings.
+LogNFORDenoise: NFORDenoise function starting up
+LogAnalytics: Display: Provider StudioTelemetry.Provider.Log is disabled for this application
+LogAnalytics: Display: Provider StudioTelemetry.Provider.CSV is disabled for this application
+LogAnalytics: Display: Provider StudioTelemetry.Provider.Horde is disabled for this application
+LogStudioTelemetry: Started StudioTelemetry Session
+LogInit: Using libcurl 8.15.0
+LogInit:  - built for Windows
+LogInit:  - supports SSL with OpenSSL/1.1.1t
+LogInit:  - supports HTTP deflate (compression) using libz 1.3
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:      CURL_VERSION_HTTP2
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - CVarHttpReuseConnectionEnabled = true  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: CreateHttpThread using FCurlMultiPollEventLoopHttpThread
+LogInit: Creating http thread with maximum 251 concurrent requests
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: Created online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+LogInit: ExecutableName: PredictionLab.exe
+LogInit: Build: ++UE5+Release-5.8-CL-58902052
+LogInit: Platform=Windows
+LogInit: MachineId=c7cb490e400a2080a8eca7904b8d1841
+LogInit: DeviceId=
+LogInit: Engine Version: 5.8.4-58902052+++UE5+Release-5.8
+LogInit: Compatible Engine Version: 5.8.0-55116800+++UE5+Release-5.8
+LogInit: Net CL: 55116800
+LogInit: OS: Windows 10 (22H2) [10.0.19045.6456] (), CPU: AMD Ryzen 5 7600X 6-Core Processor             , GPU: AMD Radeon(TM) Graphics
+LogInit: CPU Model ID: 19612, microcode revision: 0
+LogInit: Compiled (64-bit): Oct  6 2026 00:35:47
+LogInit: Architecture: x64
+LogInit: Compiled with Visual C++: 19.44.35229.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE5+Release-5.8
+LogInit: Command Line:  127.0.0.1:7777 -game -unattended -nosound -nosplash -NoLoadingScreen -NoScreenMessages -ResX=1280 -ResY=720 -RenderOffscreen -LabAuto -LabProfile=Loss175 -ExecCmds="NetEmulation.PktLag 175,NetEmulation.PktLagVariance 25,NetEmulation.PktLoss 5,p.NetShowCorrections 1,p.NetCorrectionLifetime 8,log LogNetPlayerMovement Verbose,t.MaxFPS 60" -LabMedia=C:\Users\maksim\Desktop\4th_course\multiplayer\prac_4\docs\media\run_20261123_195522\Loss175 -abslog=C:\Users\maksim\Desktop\4th_course\multiplayer\prac_4\docs\media\run_20261123_195522\Loss175\client.log
+LogInit: Base Directory: C:/Users/maksim/Desktop/4th_course/multiplayer/prac_4/dist/Windows/PredictionLab/Binaries/Win64/
+LogInit: Allocator: Binned3
+LogInit: Installed Engine Build: 0
+LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+LogDevObjectVersion: Number of dev versions registered: 44
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 20
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 49
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 268
+LogDevObjectVersion:   FortniteValkyrie (8DBC2C5B-54A7-43E0-A768-FCBB7DA29060): 8
+LogDevObjectVersion:   FortniteSeason (5B4C06B7-2463-4AF8-805B-BF70CDF5D0DD): 15
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 20
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 11
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   UE5-Main (697DD581-E64F-41AB-AA4A-51ECBEB7B628): 123
+LogDevObjectVersion:   UE5-Release (D89B5E42-24BD-4D46-8412-ACA8DF641779): 68
+LogDevObjectVersion:   UE5-SpecialProject (59DA5D52-1232-4948-B878-597870B8E98B): 9
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogDevObjectVersion:   Dev-NaniteResearch (30D58BE3-95EA-4282-A6E3-B159D8EBB06A): 1
+LogDevObjectVersion:   Dev-ComputeFramework (6304A3E7-0059-4F59-8CFC-21BD7721FD4E): 0
+LogDevObjectVersion:   Dev-RigVM (DC49959B-53C0-4DE7-9156-EA885E7C5D39): 25
+LogDevObjectVersion:   Dev-ControlRig (A7820CFB-20A7-4359-8C54-2C149623CF50): 43
+LogDevObjectVersion:   Dev-PhysicsControl (E68A5C1A-42C3-CA0D-B014-41B228C1F2DD): 33
+LogDevObjectVersion:   Dev-RigPhysics (B7F3D285-4A1C-5E08-2D6B-9F71C50E8A14): 6
+LogDevObjectVersion:   Dev-Optimus (93EDE1AA-10CA-7375-4DF9-8A2849B157A0): 14
+LogDevObjectVersion:   Dev-IKRig (F6DFBB78-BB50-A0E4-4018-B84D60CBAF23): 14
+LogDevObjectVersion:   FN-Main-InterchangePipeline (B69D2E47-E2A8-4003-BF77-18A492C4D899): 2
+LogDevObjectVersion:   Dev-Scribble (DC49359B-53C0-4DE7-9126-EA885E1C5D39): 0
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC.
+LogStreaming: Display: AsyncLoading2 - Created: Async Loading Thread: true, Async Post Load: true, Multithreaded: false
+LogInit: Object subsystem initialized
+LogConfig: Set CVar [[con.DebugEarlyDefault:1]]
+LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
+LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
+LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable created
+LogConfig: Set CVar [[r.setres:1280x720]]
+LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variable created
+LogConfig: Set CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
+LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable created
+LogConfig: Set CVar [[r.Nanite.Streaming.ReservedResources:1]]
+LogConfig: Set CVar [[D3D12.Bindless.ResourceDescriptorHeapSize:32768]]
+LogConfig: Set CVar [[D3D12.Bindless.SamplerDescriptorHeapSize:2048]]
+LogConfig: Set CVar [[r.PSOPrecache.GlobalShaders:1]]
+LogConfig: Set CVar [[r.VRS.EnableSoftware:1]]
+LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [Engine]
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[VisualizeCalibrationColorMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationColor.PPM_DefaultCalibrationColor]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[VisualizeCalibrationGrayscaleMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale.PPM_DefaultCalibrationGrayscale]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.GPUCrashDebugging:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[MaxSkinBones:(Default=65536,PerPlatform=(("Mobile", 256)))]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shaders.RemoveUnusedInterpolators:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Substrate.RoughDiffuse:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Substrate.ShadingQuality:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Substrate.TileCoord8bits:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Substrate.Glints:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Substrate.ClosuresPerPixel:4]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Refraction.Blur:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [Engine]
+[2026.11.23-16.59.15:925][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [Engine]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.AsyncLoadingThreadEnabled:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[s.MaxPackageSummarySize:16384]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__SoundBase]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__MaterialInterface]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__DeviceProfileManager]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [Engine]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.AllowParallelGC:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.CreateGCClusters:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.MinGCClusterSize:5]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.AssetClustreringEnabled:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[gc.VerifyUObjectsAreNotFGCObjects:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [Engine]
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Average",ToolTip="Simulates average internet conditions")]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Bad",ToolTip="Simulates laggy internet conditions")]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="BufferBloat",ToolTip="Simulates a connection affected by buffer bloat (in and out)")]] deferred - dummy variable created
+[2026.11.23-16.59.15:925][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [Scalability]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [Scalability]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.FXAA.Quality:4]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.TemporalAA.Quality:2]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.TSR.History.R11G11B10:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.TSR.History.ScreenPercentage:200]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.TSR.History.UpdateQuality:3]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.TSR.ShadingRejection.Flickering:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.TSR.RejectionAntiAliasingQuality:2]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.TSR.ReprojectionField:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.TSR.Resurrection:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Scalability]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.LightFunctionQuality:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.ShadowQuality:5]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.VolumetricFog:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.CapsuleShadows:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.MaxPhysicalPages:4096]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectional:-1.5]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving:-1.5]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocal:0.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocalMoving:1.0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountDirectional:8]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayDirectional:4]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountLocal:8]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayLocal:4]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.Shadow.Virtual.MarkCoarsePagesLocal:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.NumSamplesPerPixel:4]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.DownsampleMode:2]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.ScreenTraces.Quality:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.FrontLayerTranslucency.Allow:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.FrontLayerTranslucency.SpecularOnly:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.FrontLayerTranslucency.SoftShadows:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.FrontLayerTranslucency.TexturedRectLights:0]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.Spatial.UseHistorySpatialVariance:1]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.Volume.GridPixelSize:8]]
+[2026.11.23-16.59.15:925][  0]LogConfig: Set CVar [[r.MegaLights.Volume.GridSizeZ:128]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@3] File [Scalability]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DistanceFieldAO:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkylightIntensityMultiplier:1.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.AOQuality:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.DiffuseIndirect.Allow:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.FinalGatherMethod:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.SurfaceCache.AtlasSize:4096]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.SurfaceCache.CardTexelDensityScale:100]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.SurfaceCache.CardMinResolution:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.SurfaceCache.CardMaxResolution:512]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.DirectLighting.MaxLightsPerTile:8]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.DirectLighting.UpdateFactor:32]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.UpdateFactor:64]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.ProbeSpacing:4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.HemisphereProbeResolution:4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TraceMeshSDFs.Allow:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.ProbeResolution:32]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.NumProbesToTraceBudget:150]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.DownsampleFactor:16]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.NumAdaptiveProbes:8]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TracingOctahedronResolution:8]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.IrradianceFormat:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.StochasticInterpolation:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.FullResolutionJitterWidth:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TwoSidedFoliageBackfaceDiffuse:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ScreenTraces.HZBTraversal.FullResDepth:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.DownsampleFactor:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.HorizonSearch.SliceCount:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.BentNormal:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.HorizonSearch.HZB:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.HorizonSearch.ForegroundSampleRejectPower:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.FoliageOcclusionStrength:.7]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.GridPixelSize:32]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TraceFromVolume:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.ShareRadianceCacheWithOpaque:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.SpatialFilter:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TracingOctahedronResolution:3]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.ProbeResolution:8]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.GridResolution:24]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.NumProbesToTraceBudget:100]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.HardwareRayTracing.HitLighting.Allowed:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.RayTracing.Scene.BuildMode:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.RayTracing.Geometry.SkeletalMeshes:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.MeshCardRepresentation.SkeletalMesh:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.RayTracing.DynamicGeometry.MaxUpdatePrimitivesPerFrame:-1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Applying CVar settings from Section [ReflectionQuality@3] File [Scalability]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SSR.Quality:3]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.Reflections.Allow:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.Reflections.DownsampleFactor:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.Reflections.MaxRoughnessToTraceForFoliage:0.4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.MaxRoughnessToEvaluateRoughSpecularForFoliage:0.8]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.NumSamples:5]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.MinWeight:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Allow:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Enable:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [Scalability]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.MotionBlurQuality:4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.MotionBlur.HalfResGather:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LensFlareQuality:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.BloomQuality:5]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Bloom.ScreenPercentage:50.000]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.FastBlurThreshold:100]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Upscale.Quality:3]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LightShaftQuality:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Filter.SizeScale:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LUT.Shaper:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.LUT.Size:32]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Tonemapper.Quality:5]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Gather.ResolutionDivisor:2         ; lower gathering resolution]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [Scalability]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Streaming.MipBias:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Streaming.Boost:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.MaxAnisotropy:8]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [Scalability]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.TranslucencyLightingVolume.Dim:64]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.RefractionQuality:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SceneColorFormat:4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.DetailMode:3]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.TranslucencyLightingVolume.Blur:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SSS.Scale:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SSS.SampleSet:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SSS.Quality:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SSS.HalfRes:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SSGI.Quality:3]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.ParticleLightQuality:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Fog.SeparateComposition:-1	; Allow fog separate composition when FSSS is enabled.]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.Refraction.OffsetQuality:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.Allowed:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.DownsampleFactor:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.MaxStepCount:256]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.Shadows.Resolution:512]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.Shadows.Precision:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.UseExistenceMask:0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [Scalability]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[foliage.DensityScale:1.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[grass.DensityScale:1.0]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[pcg.Quality:3]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [Scalability]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Set CVar [[r.AnisotropicMaterials:1]]
+[2026.11.23-16.59.15:926][  0]LogConfig: Applying CVar settings from Section [LandscapeQuality@3] File [Scalability]
+[2026.11.23-16.59.16:122][  0]LogRHI: Using Default RHI: D3D12
+[2026.11.23-16.59.16:122][  0]LogRHI: Using Highest Feature Level of D3D12: SM5
+[2026.11.23-16.59.16:122][  0]LogRHI: Loading RHI module D3D12RHI
+[2026.11.23-16.59.16:122][  0]LogD3D12RHI: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+[2026.11.23-16.59.16:122][  0]LogRHI: Checking if RHI D3D12 with Feature Level SM5 is supported by your system.
+[2026.11.23-16.59.16:122][  0]LogD3D12RHI: Found D3D12 adapter 0: NVIDIA GeForce RTX 4060 Ti (VendorId: 10de, DeviceId: 2803, SubSysId: 41231458, Revision: 00a1
+[2026.11.23-16.59.16:122][  0]LogD3D12RHI:   Max supported Feature Level 12_2, shader model 6.7, binding tier 3, wave ops supported, atomic64 supported
+[2026.11.23-16.59.16:122][  0]LogD3D12RHI:   Adapter has 16107MB of dedicated video memory, 0MB of dedicated system memory, and 15912MB of shared system memory, 1 output[s], TileBased:false UMA:false CacheCoherentUMA:false GPU Upload Heaps:false
+[2026.11.23-16.59.16:122][  0]LogD3D12RHI:   Driver Version: 610.47 (internal:32.0.16.1047, unified:610.47)
+[2026.11.23-16.59.16:122][  0]LogD3D12RHI:      Driver Date: 5-19-2026
+[2026.11.23-16.59.16:122][  0]LogD3D12RHI: Found D3D12 adapter 1: AMD Radeon(TM) Graphics (VendorId: 1002, DeviceId: 164e, SubSysId: 7e261462, Revision: 00c7
+[2026.11.23-16.59.16:122][  0]LogD3D12RHI:   Max supported Feature Level 12_2, shader model 6.7, binding tier 3, wave ops supported, atomic64 supported
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI:   Adapter has 485MB of dedicated video memory, 0MB of dedicated system memory, and 15912MB of shared system memory, 0 output[s], TileBased:false UMA:true CacheCoherentUMA:false GPU Upload Heaps:false
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI:   Driver Version: AMD Software: Adrenalin Edition 26.11.2 (internal:32.0.21045.29003, unified:32.0.21045.29003)
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI:      Driver Date: 11-17-2026
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI: Found D3D12 adapter 2: Microsoft Basic Render Driver (VendorId: 1414, DeviceId: 008c, SubSysId: 0000, Revision: 0000
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI:   Max supported Feature Level 12_1, shader model 6.2, binding tier 3, wave ops supported, atomic64 unsupported
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI:   Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 15912MB of shared system memory, 0 output[s], TileBased:false UMA:true CacheCoherentUMA:true GPU Upload Heaps:false
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI:   D3D10Warp Version: 10.0.19041.5794
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI: DirectX Agility SDK runtime found.
+[2026.11.23-16.59.16:123][  0]LogD3D12RHI: Chosen D3D12 Adapter Id = 0
+[2026.11.23-16.59.16:123][  0]LogRHI: RHI D3D12 with Feature Level SM5 is supported and will be used.
+[2026.11.23-16.59.16:123][  0]LogInit: Selected Device Profile: [Windows]
+[2026.11.23-16.59.16:123][  0]LogHAL: Display: Platform has ~ 32 GB [33370800128 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.23-16.59.16:123][  0]LogDeviceProfileManager: Going up to parent DeviceProfile []
+[2026.11.23-16.59.16:123][  0]LogDeviceProfileManager: Pushing Device Profile CVar: [[UI.SlateSDFText.RasterizationMode:Bitmap -> Msdf]]
+[2026.11.23-16.59.16:123][  0]LogDeviceProfileManager: Pushing Device Profile CVar: [[UI.SlateSDFText.ResolutionLevel:2 -> 2]]
+[2026.11.23-16.59.16:123][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2026.11.23-16.59.16:123][  0]LogConfig: Set CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2026.11.23-16.59.16:123][  0]LogConfig: Set CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2026.11.23-16.59.16:123][  0]LogConfig: Applying CVar settings from Section [Startup_Windows] File [../../../Engine/Config/ConsoleVariables.ini]
+[2026.11.23-16.59.16:123][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2026.11.23-16.59.16:123][  0]LogConfig: Set CVar [[WindowsApplication.UseWorkerThreadForRawInput:0]]
+[2026.11.23-16.59.16:123][  0]LogConfig: Set CVar [[r.PSOPrecache.KeepInMemoryForActiveMaterials:1]]
+[2026.11.23-16.59.16:123][  0]LogInit: Computer: DESKTOP-R17IQIJ
+[2026.11.23-16.59.16:123][  0]LogInit: User: maksim
+[2026.11.23-16.59.16:123][  0]LogInit: CPU Page size=4096, Cores=6
+[2026.11.23-16.59.16:123][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2026.11.23-16.59.16:123][  0]LogInit: Gaming Handheld Device: 0
+[2026.11.23-16.59.16:129][  0]LogMemory: Process is running as part of a Windows Job with separate resource limits
+[2026.11.23-16.59.16:129][  0]LogMemory: Memory total: Physical=31.1GB (32GB approx) Virtual=39.6GB
+[2026.11.23-16.59.16:129][  0]LogMemory: Platform Memory Stats for Windows
+[2026.11.23-16.59.16:129][  0]LogMemory: Process Physical Memory: 357.31 MB used, 357.32 MB peak
+[2026.11.23-16.59.16:129][  0]LogMemory: Process Virtual Memory: 215.14 MB used, 215.14 MB peak
+[2026.11.23-16.59.16:129][  0]LogMemory: Physical Memory: 13241.67 MB used,  18583.20 MB free, 31824.88 MB total
+[2026.11.23-16.59.16:129][  0]LogMemory: Virtual Memory: 20505.15 MB used,  20023.72 MB free, 40528.88 MB total
+[2026.11.23-16.59.16:129][  0]LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+[2026.11.23-16.59.16:131][  0]LogWindows: WindowsPlatformFeatures enabled
+[2026.11.23-16.59.16:131][  0]LogSpline: Registered spline type: TypeId=0x54E3AD22, Impl=MultiSpline, Value=Vector
+[2026.11.23-16.59.16:131][  0]LogChaosDD: Chaos Debug Draw Startup
+[2026.11.23-16.59.16:131][  0]LogInit: Physics initialised using underlying interface: Chaos
+[2026.11.23-16.59.16:131][  0]LogInit: Using OS detected language (ru-RU).
+[2026.11.23-16.59.16:131][  0]LogInit: Using OS detected locale (ru-RU).
+[2026.11.23-16.59.16:132][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the language.
+[2026.11.23-16.59.16:132][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the locale.
+[2026.11.23-16.59.16:170][  0]LogObj: Display: Attempting to load config data for Default__SlateThemeManager before the Class has been constructed/registered/linked (likely during module loading or early startup). This will result in the load silently failing and should be fixed.
+[2026.11.23-16.59.16:171][  0]LogSlate: New Slate User Created. Platform User Id 0, User Index 0, Is Virtual User: 0
+[2026.11.23-16.59.16:171][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.23-16.59.16:183][  0]LogInit: Running DelayedAutoRegister Phase PreRHIInit
+[2026.11.23-16.59.16:183][  0]LogRHI: Using Default RHI: D3D12
+[2026.11.23-16.59.16:183][  0]LogRHI: Using Highest Feature Level of D3D12: SM5
+[2026.11.23-16.59.16:183][  0]LogRHI: Loading RHI module D3D12RHI
+[2026.11.23-16.59.16:183][  0]LogRHI: Checking if RHI D3D12 with Feature Level SM5 is supported by your system.
+[2026.11.23-16.59.16:183][  0]LogRHI: RHI D3D12 with Feature Level SM5 is supported and will be used.
+[2026.11.23-16.59.16:219][  0]LogD3D12RHI: Integrated GPU (iGPU): false
+[2026.11.23-16.59.16:219][  0]LogD3D12RHI: Display: Creating D3D12 RHI with Max Feature Level SM5
+[2026.11.23-16.59.16:224][  0]LogD3D12RHI: NVIDIA Architecture=400
+[2026.11.23-16.59.16:224][  0]LogRHI: Display: Timeout Detection and Recovery (TDR) summary: 
+	- TDR settings OK - Level: Recover, Delay: 2, DdiDelay: 5
+[2026.11.23-16.59.16:224][  0]LogWindows: Attached monitors:
+[2026.11.23-16.59.16:224][  0]LogWindows:     resolution: 1920x1080, work area: (0, 0) -> (1920, 1040), device: '\\.\DISPLAY5' [PRIMARY]
+[2026.11.23-16.59.16:224][  0]LogWindows: Found 1 attached monitors.
+[2026.11.23-16.59.16:224][  0]LogWindows: Gathering driver information using Windows Setup API
+[2026.11.23-16.59.16:224][  0]LogRHI: RHI Adapter Info:
+[2026.11.23-16.59.16:224][  0]LogRHI:             Name: NVIDIA GeForce RTX 4060 Ti
+[2026.11.23-16.59.16:224][  0]LogRHI:   Driver Version: 610.47 (internal:32.0.16.1047, unified:610.47)
+[2026.11.23-16.59.16:224][  0]LogRHI:      Driver Date: 5-19-2026
+[2026.11.23-16.59.16:224][  0]LogRHI: Performing driver check for denylisted drivers.
+[2026.11.23-16.59.16:224][  0]LogD3D12RHI:     GPU DeviceId: 0x2803 (for the marketing name, search the web for "GPU Device Id")
+[2026.11.23-16.59.16:224][  0]LogD3D12RHI: InitD3DDevice: -D3DDebug = off -D3D12GPUValidation = off
+[2026.11.23-16.59.16:303][  0]LogNvidiaAftermath: Aftermath initialized
+[2026.11.23-16.59.16:303][  0]LogD3D12RHI: Emitting draw events for PIX profiling.
+[2026.11.23-16.59.16:351][  0]LogNvidiaAftermath: Aftermath enabled. Active feature flags: 
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device1 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device2 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device3 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device4 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device5 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device6 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device7 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device8 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device9 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device10 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device11 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: ID3D12Device12 is supported.
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: Bindless is supported. MaxNonSamplerDescriptors: 1000000, MaxSamplerDescriptors: 2048
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: Stencil ref from pixel shader is not supported
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: Raster order views are supported
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: Wave Operations are supported (wave size: min=32 max=32).
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI:      Legacy Barriers Present in Build: Yes
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI:    Enhanced Barriers Present in Build: Yes
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI:      Enhanced Barriers Driver Support: Yes
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: Preferred Barrier Implementation Type: Legacy
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI:         Chosen Barrier Implementation: D3D12LegacyBarriers
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: Mesh shader tier 1.0 is supported
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: AtomicInt64OnTypedResource is supported
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: AtomicInt64OnGroupShared is supported
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: AtomicInt64OnDescriptorHeapResource is supported
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: Shader Model 6.6 atomic64 is supported
+[2026.11.23-16.59.16:351][  0]LogD3D12RHI: Work Graphs are supported
+[2026.11.23-16.59.16:410][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for DiagnosticBuffer (Queue: 0x00007FF2DD735C00)
+[2026.11.23-16.59.16:410][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for DiagnosticBuffer (Queue: 0x00007FF2DD735EC0)
+[2026.11.23-16.59.16:411][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for DiagnosticBuffer (Queue: 0x00007FF2DD736180)
+[2026.11.23-16.59.16:411][  0]LogD3D12RHI: Display: Not using pipeline state disk cache per r.D3D12.PSO.DiskCache=0
+[2026.11.23-16.59.16:411][  0]LogD3D12RHI: Display: Not using driver-optimized pipeline state disk cache per r.D3D12.PSO.DriverOptimizedDiskCache=0
+[2026.11.23-16.59.16:411][  0]LogD3D12RHI: Skipped NVAPI RT queries since we the feature level is below SM6
+[2026.11.23-16.59.16:411][  0]LogRHI: Texture pool is 9663 MB (70% of 13805 MB)
+[2026.11.23-16.59.16:411][  0]LogD3D12RHI: Async texture creation enabled
+[2026.11.23-16.59.16:411][  0]LogD3D12RHI: RHI has support for 64 bit atomics
+[2026.11.23-16.59.16:417][  0]LogVRS: Current RHI supports per-draw and screenspace Variable Rate Shading
+[2026.11.23-16.59.16:417][  0]LogRHI: Render tracing channels set: 'Submission' -> 0xf
+[2026.11.23-16.59.16:417][  0]LogCsvProfiler: Display: Metadata set : verbatimrhiname="D3D12"
+[2026.11.23-16.59.16:417][  0]LogCsvProfiler: Display: Metadata set : rhiname="D3D12"
+[2026.11.23-16.59.16:417][  0]LogCsvProfiler: Display: Metadata set : rhifeaturelevel="SM5"
+[2026.11.23-16.59.16:417][  0]LogCsvProfiler: Display: Metadata set : shaderplatform="PCD3D_SM5"
+[2026.11.23-16.59.16:417][  0]LogCsvProfiler: Display: Metadata set : gpu="NVIDIA GeForce RTX 4060 Ti"
+[2026.11.23-16.59.16:417][  0]LogCsvProfiler: Display: Metadata set : gpudriver="610.47"
+[2026.11.23-16.59.16:417][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.23-16.59.16:422][  0]LogRendererCore: Ray tracing is disabled. Reason: disabled through project setting (r.RayTracing=0).
+[2026.11.23-16.59.16:423][  0]LogShaderLibrary: Display: Using IoDispatcher for shader code library Global. Total 3926 unique shaders.
+[2026.11.23-16.59.16:423][  0]LogShaderLibrary: Display: Cooked Context: Loaded Shared Shader Library Global
+[2026.11.23-16.59.16:423][  0]LogShaderLibrary: Display: Logical shader library 'Global' has been created as a monolithic library, components 1
+[2026.11.23-16.59.16:423][  0]LogTemp: Display: Clearing the OS Cache
+[2026.11.23-16.59.16:423][  0]LogInit: Running DelayedAutoRegister Phase ShaderTypesReady
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: --- StereoAspects begin ---
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: Platform=PCD3D_SM5 (0)
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bInstancedStereo = 0
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bMobilePlatform = 0
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bMobilePostprocessing = 1
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bMobileMultiView = 0
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bMultiViewportCapable = 1
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bInstancedStereoNative = 0
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: ---
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bMobileMultiViewCoreSupport = 0
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bMobileMultiViewNative = 0
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: ---
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bInstancedStereoEnabled = 0
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: bMobileMultiViewEnabled = 0
+[2026.11.23-16.59.16:435][  0]LogInit: FStereoShaderAspects: --- StereoAspects end ---
+[2026.11.23-16.59.16:435][  0]LogInit: XR: Instanced Stereo Rendering is Disabled
+[2026.11.23-16.59.16:435][  0]LogInit: XR: Mobile Multiview is Disabled
+[2026.11.23-16.59.16:442][  0]LogSlate: Using FreeType 2.14.1
+[2026.11.23-16.59.16:443][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.23-16.59.16:451][  0]LogShaderLibrary: Display: Using IoDispatcher for shader code library PredictionLab. Total 1248 unique shaders.
+[2026.11.23-16.59.16:451][  0]LogShaderLibrary: Display: Cooked Context: Loaded Shared Shader Library PredictionLab
+[2026.11.23-16.59.16:451][  0]LogShaderLibrary: Display: Logical shader library 'PredictionLab' has been created as a monolithic library, components 1
+[2026.11.23-16.59.16:451][  0]LogRHI: Could not open FPipelineCacheFile: ../../../PredictionLab/Content/PipelineCaches/Windows/PredictionLab_PCD3D_SM5.stable.upipelinecache
+[2026.11.23-16.59.16:451][  0]LogRHI: Could not open FPipelineCacheFile: ../../../PredictionLab/Content/PipelineCaches/Windows/PredictionLab_PCD3D_SM5.stable.upipelinecache
+[2026.11.23-16.59.16:451][  0]LogShaderLibrary: Display: Tried to open again shader library 'PredictionLab', but could not find new components for it (existing components: 1).
+[2026.11.23-16.59.16:451][  0]LogRHI: Could not open FPipelineCacheFile: ../../../PredictionLab/Content/PipelineCaches/Windows/PredictionLab_PCD3D_SM5.stable.upipelinecache
+[2026.11.23-16.59.16:451][  0]LogInit: Using OS detected language (ru-RU).
+[2026.11.23-16.59.16:451][  0]LogInit: Using OS detected locale (ru-RU).
+[2026.11.23-16.59.16:451][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the language.
+[2026.11.23-16.59.16:451][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the locale.
+[2026.11.23-16.59.16:452][  0]LogAssetRegistry: ActiveMountsLoading is disabled.
+[2026.11.23-16.59.16:452][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2026.11.23-16.59.16:455][  0]LogInit: Running DelayedAutoRegister Phase PreObjectSystemReady
+[2026.11.23-16.59.16:568][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+[2026.11.23-16.59.16:568][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+[2026.11.23-16.59.16:569][  0]LogDeviceProfileManager: Active device profile: [00007FE87DFF3A10][00007FF3DD74A800 82] Windows
+[2026.11.23-16.59.16:569][  0]LogCsvProfiler: Display: Metadata set : deviceprofile="Windows"
+[2026.11.23-16.59.16:569][  0]LogInit: Running DelayedAutoRegister Phase DeviceProfileManagerReady
+[2026.11.23-16.59.16:570][  0]LogStreaming: Display: FlushAsyncLoading(8): 8 QueuedPackages, 0 AsyncPackages
+[2026.11.23-16.59.16:570][  0]LogFilePackageStore: Updated: NewPackages=494, OldPackages=0, TotalPackages=494
+[2026.11.23-16.59.16:574][  0]LogStreaming: Display: Partially loaded package /Engine/EngineMaterials/WorldGridMaterial (state: WaitingForIo) to avoid deadlock when it was recursively flushed by package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: PostLoad). UniqueCallstack(-1).
+[2026.11.23-16.59.16:577][  0]LogStreaming: Display: Partially loaded package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: WaitingForIo) to avoid deadlock when it was recursively flushed by package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: PostLoad). UniqueCallstack(-1).
+[2026.11.23-16.59.16:578][  0]LogStreaming: Display: Partially loaded package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: WaitingForIo) to avoid deadlock when it was recursively flushed by package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: PostLoad). UniqueCallstack(-1).
+[2026.11.23-16.59.16:579][  0]LogStreaming: Display: Partially loaded package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: WaitingForIo) to avoid deadlock when it was recursively flushed by package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: PostLoad). UniqueCallstack(-1).
+[2026.11.23-16.59.16:616][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.23-16.59.16:627][  0]LogMetaSound: Display: MetaSound Page Target Initialized to 'Default'
+[2026.11.23-16.59.16:629][  0]LogPackageLocalizationCache: Processed 82 localized package path(s) for 1 prioritized culture(s) in 0.000242 seconds
+[2026.11.23-16.59.16:632][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.11.23-16.59.16:633][  0]LogConfig: Applying CVar settings from Section [/Script/NNEDenoiser.NNEDenoiserSettings] File [Engine]
+[2026.11.23-16.59.16:635][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.23-16.59.16:644][  0]LogInit: Running DelayedAutoRegister Phase ObjectSystemReady
+[2026.11.23-16.59.16:644][  0]LogModuleManager: StartProcessingNewlyLoadedObjects
+[2026.11.23-16.59.16:647][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: 1335160B50AE4C0F8000000000009C00 | Instance: 4D04310945E5A71D3CB286ADB74D41D0 (DESKTOP-R17IQIJ-26060).
+[2026.11.23-16.59.16:652][  0]LogNNERuntimeORT: MakeRuntimeORTDml:
+[2026.11.23-16.59.16:652][  0]LogNNERuntimeORT:   DirectML:  yes
+[2026.11.23-16.59.16:652][  0]LogNNERuntimeORT:   RHI D3D12: yes
+[2026.11.23-16.59.16:652][  0]LogNNERuntimeORT:   D3D12:     n/a (checked in CanCreateModelGPU)
+[2026.11.23-16.59.16:652][  0]LogNNERuntimeORT: Interface availability:
+[2026.11.23-16.59.16:652][  0]LogNNERuntimeORT:   GPU: n/a (checked in CanCreateModelGPU)
+[2026.11.23-16.59.16:652][  0]LogNNERuntimeORT:   RDG: yes
+[2026.11.23-16.59.16:658][  0]LogAudio: Display: Registering Engine Module Parameter Interfaces...
+[2026.11.23-16.59.16:658][  0]LogMetaSound: MetaSound Engine Initialized
+[2026.11.23-16.59.16:665][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.23-16.59.16:672][  0]LogUObjectArray: 34525 objects as part of root set at end of initial load.
+[2026.11.23-16.59.16:672][  0]LogUObjectArray: 4 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.23-16.59.16:672][  0]LogUObjectArray: CloseDisregardForGC: 34525/34525 objects in disregard for GC pool
+[2026.11.23-16.59.16:707][  0]LogEngine: Initializing Engine...
+[2026.11.23-16.59.16:731][  0]LogNetVersion: Set ProjectVersion to 1.0.0. Version Checksum will be recalculated on next use.
+[2026.11.23-16.59.16:731][  0]LogInit: Texture streaming: Enabled
+[2026.11.23-16.59.16:732][  0]LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2026.11.23-16.59.16:737][  0]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.11.23-16.59.16:741][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.23-16.59.16:746][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.23-16.59.16:754][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.23-16.59.16:754][  0]LogNNEDenoiser: Ray Tracing is not enabled, therefore NNEDenoiser is not registered!
+[2026.11.23-16.59.16:754][  0]LogMutable: Creating Mutable Customizable Object System.
+[2026.11.23-16.59.16:758][  0]LogCsvProfiler: Display: Metadata set : raytracing="0"
+[2026.11.23-16.59.16:772][  0]LogInit: Display: Starting Game.
+[2026.11.23-16.59.16:772][  0]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1/Game/Maps/PredictionArena?Name=Player"
+[2026.11.23-16.59.16:772][  0]LogNet: Browse: 127.0.0.1/Game/Maps/PredictionArena?Name=Player
+[2026.11.23-16.59.16:773][  0]LogCsvProfiler: Display: Metadata set : iris="0"
+[2026.11.23-16.59.16:773][  0]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2026.11.23-16.59.16:773][  0]LogInit: WinSock: Socket queue. Rx: 262144 (config 262144) Tx: 32768 (config 32768)
+[2026.11.23-16.59.16:773][  0]LogNet: Created socket for bind address: 0.0.0.0:0
+[2026.11.23-16.59.16:773][  0]LogNet: IpConnection_2147482404 setting maximum channels to: 32767
+[2026.11.23-16.59.16:774][  0]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2026.11.23-16.59.16:774][  0]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 3
+[2026.11.23-16.59.16:774][  0]LogNet: AddressResolution: Begin [Host=127.0.0.1] [Port=7777] [Type=IPv4]
+[2026.11.23-16.59.16:774][  0]LogNet: AddressResolution: Numeric IPv4 detected, resolving synchronously [Host=127.0.0.1]
+[2026.11.23-16.59.16:774][  0]LogNet: Address resolution complete, connection socket assigned (resolved address: 127.0.0.1:7777) [Sync]
+[2026.11.23-16.59.16:774][  0]LogNet: Game client on port 7777, rate 100000
+[2026.11.23-16.59.16:774][  0]LogNetVersion: PredictionLab 1.0.0, NetCL: 55116800, EngineNetworkVersion: 44, GameNetworkVersion: 0 (Checksum: 4016742898)
+[2026.11.23-16.59.16:775][  0]LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
+[2026.11.23-16.59.16:775][  0]LogPakFile: AllPaks IndexSizes: DirectoryHashSize=32, PathHashSize=16, EntriesSize=24576, DirTreeIndexSize=158912, TotalSize=183536
+[2026.11.23-16.59.16:775][  0]LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
+[2026.11.23-16.59.16:775][  0]LogRHI: Display: ShaderPipelineCache: Batching Resumed.
+[2026.11.23-16.59.16:775][  0]LogInit: Running DelayedAutoRegister Phase EndOfEngineInit
+[2026.11.23-16.59.16:776][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.23-16.59.16:776][  0]LogLoad: (Engine Initialization) Total time: 1.10 seconds
+[2026.11.23-16.59.16:776][  0]LogInit: Adding external input plugin.
+[2026.11.23-16.59.16:777][  0]LogHandshake: Cached server SessionID: 0
+[2026.11.23-16.59.16:777][  0]LogHandshake: SendChallengeResponse. Timestamp: 12.500238, Cookie: 081223162160128180105065124037180176008252171207199158254002
+[2026.11.23-16.59.16:778][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2026.11.23-16.59.16:778][  0]LogCsvProfiler: Display: Metadata set : streamingpoolsizemb="1000"
+[2026.11.23-16.59.16:778][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.23-16.59.16:779][  0]LogNet: PktLag set to 175
+[2026.11.23-16.59.16:779][  0]LogNet: PktLagVariance set to 25
+[2026.11.23-16.59.16:779][  0]LogNet: PktLoss set to 5
+[2026.11.23-16.59.16:779][  0]p.NetShowCorrections = "1"
+[2026.11.23-16.59.16:779][  0]p.NetCorrectionLifetime = "8"
+[2026.11.23-16.59.16:779][  0]LogHAL: Log category LogNetPlayerMovement verbosity has been raised to Verbose.
+[2026.11.23-16.59.16:779][  0]LogNetPlayerMovement                      Verbose       
+[2026.11.23-16.59.16:779][  0]t.MaxFPS = "60"
+[2026.11.23-16.59.16:779][  0]LogTrace: Display: Control listening on port 39705
+[2026.11.23-16.59.16:792][  1]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_2147482404, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_2147482467, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2026.11.23-16.59.17:543][ 46]LogNet: Welcomed by server (Level: /Game/Maps/PredictionArena, Game: /Script/PredictionLab.LabGameMode)
+[2026.11.23-16.59.17:543][ 46]LogLoad: LoadMap: 127.0.0.1/Game/Maps/PredictionArena?Name=Player?game=/Script/PredictionLab.LabGameMode
+[2026.11.23-16.59.17:543][ 46]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.23-16.59.17:543][ 46]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.23-16.59.17:543][ 46]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.23-16.59.17:546][ 46]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2026.11.23-16.59.17:547][ 46]LogStreaming: Display: FlushAsyncLoading(68): 1 QueuedPackages, 0 AsyncPackages
+[2026.11.23-16.59.17:547][ 46]LogChaosDD: Creating Chaos Debug Draw Scene for world PredictionArena
+[2026.11.23-16.59.17:549][ 46]LogWorld: Bringing World /Game/Maps/PredictionArena.PredictionArena up for play (max tick rate 60) at 2026.11.23-19.59.17
+[2026.11.23-16.59.17:549][ 46]LogWorld: Bringing up level for play took: 0.000514
+[2026.11.23-16.59.17:553][ 46]LogSlate: Display: Synchronously lazy loading font file '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' with subface index 0 in Game thread.
+[2026.11.23-16.59.17:553][ 46]LogSlate: Display: Took 0.000220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K) on Game thread.
+[2026.11.23-16.59.17:553][ 46]LogSlate: Display: Freetype font face in memory successfully created with synchronously loaded raw font file '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' subface 0 in Game thread.
+[2026.11.23-16.59.17:553][ 46]LogSlate: Display: Font face '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' subface index 0 successfully added to font face map in Game thread.
+[2026.11.23-16.59.17:553][ 46]LogLoad: Took 0.010765 seconds to LoadMap(/Game/Maps/PredictionArena)
+[2026.11.23-16.59.17:553][ 46]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Maps/PredictionArena
+[2026.11.23-16.59.17:554][ 46]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2026.11.23-16.59.17:558][ 47]LogRenderer: Pixel format for LUT is PF_A2B10G10R10
+[2026.11.23-16.59.17:566][ 47]LogRHI: Display: Encountered a new compute PSO: 2492016147 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:566][ 47]LogRHI: Display: Encountered a new graphics PSO: 2103596676 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:566][ 47]LogRHI: Display: Encountered a new graphics PSO: 3365803695 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 1562664903 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 2577428162 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 84256573 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 636927946 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 2159209290 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 2519847289 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 2489923023 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 3490664842 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 1852929419 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 3275642788 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 3392303429 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:567][ 47]LogRHI: Display: Encountered a new graphics PSO: 2005300987 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:568][ 47]LogRHI: Display: Encountered a new graphics PSO: 3823587509 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:568][ 47]LogRHI: Display: Encountered a new graphics PSO: 351061559 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:568][ 47]LogRHI: Display: Encountered a new graphics PSO: 1196237148 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:568][ 47]LogRHI: Display: Encountered a new graphics PSO: 2881335188 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:568][ 47]LogRHI: Display: Encountered a new graphics PSO: 3426889929 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:568][ 47]LogRHI: Display: Encountered a new graphics PSO: 2201795546 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:577][ 47]LogRenderer: Forcing update for all mesh draw commands: SkyLight change
+[2026.11.23-16.59.17:578][ 47]LogRHI: Display: Encountered a new graphics PSO: 3645264678 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:578][ 47]LogRHI: Display: Encountered a new graphics PSO: 780276339 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:600][ 47]LogRHI: Display: Encountered a new graphics PSO: 661658065 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:600][ 47]LogRHI: Display: Encountered a new graphics PSO: 2857137693 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:601][ 47]LogRHI: Display: Encountered a new graphics PSO: 1362000784 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:601][ 47]LogRHI: Display: Encountered a new graphics PSO: 969852176 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:601][ 47]LogRHI: Display: Encountered a new graphics PSO: 3466303638 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:601][ 47]LogRHI: Display: Encountered a new graphics PSO: 3727943409 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:603][ 47]LogRHI: Display: Encountered a new graphics PSO: 4104773443 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:606][ 48]LogRHI: Display: Encountered a new graphics PSO: 3946204628 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:606][ 48]LogRHI: Display: Encountered a new graphics PSO: 1492198247 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:606][ 48]LogRHI: Display: Encountered a new graphics PSO: 1521076177 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:606][ 48]LogRHI: Display: Encountered a new graphics PSO: 516924308 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:606][ 49]LogRHI: Display: Encountered a new graphics PSO: 2695989141 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:607][ 49]LogRHI: Display: Encountered a new graphics PSO: 234792378 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:607][ 49]LogRHI: Display: Encountered a new graphics PSO: 83002203 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:607][ 49]LogRHI: Display: Encountered a new graphics PSO: 757572267 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:607][ 49]LogRHI: Display: Encountered a new graphics PSO: 1702714762 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.17:607][ 49]LogRHI: Display: Encountered a new graphics PSO: 42123991 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.18:155][ 81]LogEnhancedInput: Warning: UEnhancedInputLocalPlayerSubsystem for Local Player 'LocalPlayer_2147482479' does not have a valid PlayerInput object. Failed to load user settings.
+[2026.11.23-16.59.18:159][ 82]LogRHI: Display: Encountered a new graphics PSO: 3222147001 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.18:159][ 82]LogRHI: Display: Encountered a new graphics PSO: 154778247 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.21:147][258]LogTemp: Display: LAB event=trial trial=0 csp=0
+[2026.11.23-16.59.22:447][336]LogTemp: Display: LAB event=input id=1 csp=0 time=17135503.147304 pre_speed=450.0
+[2026.11.23-16.59.23:280][386]LogTemp: Display: LAB event=baseline_ack id=1 accepted=1
+[2026.11.23-16.59.23:280][386]LogTemp: Display: LAB event=response id=1 csp=0 response_ms=833.452
+[2026.11.23-16.59.24:229][443]LogTemp: Display: LAB event=baseline_ack id=2 accepted=0
+[2026.11.23-16.59.25:146][498]LogTemp: Display: LAB event=trial trial=1 csp=0
+[2026.11.23-16.59.26:446][576]LogTemp: Display: LAB event=input id=3 csp=0 time=17135507.147394 pre_speed=450.0
+[2026.11.23-16.59.26:796][597]LogTemp: Display: LAB event=baseline_ack id=3 accepted=1
+[2026.11.23-16.59.26:796][597]LogTemp: Display: LAB event=response id=3 csp=0 response_ms=350.021
+[2026.11.23-16.59.28:261][682]LogTemp: Display: LAB event=baseline_ack id=4 accepted=0
+[2026.11.23-16.59.29:144][735]LogTemp: Display: LAB event=trial trial=2 csp=0
+[2026.11.23-16.59.30:444][813]LogTemp: Display: LAB event=input id=5 csp=0 time=17135511.144801 pre_speed=450.0
+[2026.11.23-16.59.30:827][836]LogTemp: Display: LAB event=baseline_ack id=5 accepted=1
+[2026.11.23-16.59.30:827][836]LogTemp: Display: LAB event=response id=5 csp=0 response_ms=383.420
+[2026.11.23-16.59.32:227][920]LogTemp: Display: LAB event=baseline_ack id=6 accepted=0
+[2026.11.23-16.59.32:410][931]LogTemp: Display: LAB event=cmc_correction count=1 saved=24 error_cm=6.70
+[2026.11.23-16.59.32:410][931]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=13.423 is 1.851 LocDiff(X=1.851 Y=0.000 Z=-0.050) ClientLoc(X=-14.513 Y=-300.000 Z=90.100) ServerLoc(X=-16.363 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=277.419 Y=0.000 Z=0.000) SavedMoves 24
+[2026.11.23-16.59.32:410][931]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 24 Moves, starting at Timestamp 13.439244
+[2026.11.23-16.59.32:412][932]LogRHI: Display: Encountered a new graphics PSO: 3792808170 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.32:412][932]LogRHI: Display: Encountered a new graphics PSO: 543779247 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.32:412][932]LogRHI: Display: Encountered a new graphics PSO: 141936691 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.32:412][932]LogRHI: Display: Encountered a new graphics PSO: 3324408718 (PSOPrecacheState: Missed)
+[2026.11.23-16.59.32:493][936]LogTemp: Display: LAB event=cmc_correction count=2 saved=22 error_cm=0.00
+[2026.11.23-16.59.32:493][936]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=13.539 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-11.510 Y=-300.000 Z=90.150) ServerLoc(X=-11.510 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 22
+[2026.11.23-16.59.32:493][936]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 22 Moves, starting at Timestamp 13.555909
+[2026.11.23-16.59.32:627][944]LogTemp: Display: LAB event=cmc_correction count=3 saved=23 error_cm=0.00
+[2026.11.23-16.59.32:627][944]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=13.656 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-11.510 Y=-300.000 Z=90.150) ServerLoc(X=-11.510 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-16.59.32:627][944]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 13.672574
+[2026.11.23-16.59.32:761][952]LogTemp: Display: LAB event=cmc_correction count=4 saved=24 error_cm=0.00
+[2026.11.23-16.59.32:761][952]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=13.773 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-11.510 Y=-300.000 Z=90.150) ServerLoc(X=-11.510 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 24
+[2026.11.23-16.59.32:761][952]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 24 Moves, starting at Timestamp 13.789239
+[2026.11.23-16.59.33:144][975]LogTemp: Display: LAB event=trial trial=3 csp=0
+[2026.11.23-16.59.34:444][ 53]LogTemp: Display: LAB event=input id=7 csp=0 time=17135515.144837 pre_speed=450.0
+[2026.11.23-16.59.34:860][ 78]LogTemp: Display: LAB event=baseline_ack id=7 accepted=1
+[2026.11.23-16.59.34:860][ 78]LogTemp: Display: LAB event=response id=7 csp=0 response_ms=416.684
+[2026.11.23-16.59.36:243][161]LogTemp: Display: LAB event=baseline_ack id=8 accepted=0
+[2026.11.23-16.59.37:144][215]LogTemp: Display: LAB event=trial trial=4 csp=0
+[2026.11.23-16.59.38:444][293]LogTemp: Display: LAB event=input id=9 csp=0 time=17135519.144838 pre_speed=450.0
+[2026.11.23-16.59.38:810][315]LogTemp: Display: LAB event=baseline_ack id=9 accepted=1
+[2026.11.23-16.59.38:810][315]LogTemp: Display: LAB event=response id=9 csp=0 response_ms=366.694
+[2026.11.23-16.59.40:211][399]LogTemp: Display: LAB event=baseline_ack id=10 accepted=0
+[2026.11.23-16.59.41:144][455]LogTemp: Display: LAB event=trial trial=5 csp=0
+[2026.11.23-16.59.42:444][533]LogTemp: Display: LAB event=input id=11 csp=0 time=17135523.144861 pre_speed=450.0
+[2026.11.23-16.59.42:844][557]LogTemp: Display: LAB event=baseline_ack id=11 accepted=1
+[2026.11.23-16.59.42:844][557]LogTemp: Display: LAB event=response id=11 csp=0 response_ms=400.052
+[2026.11.23-16.59.44:227][640]LogTemp: Display: LAB event=baseline_ack id=12 accepted=0
+[2026.11.23-16.59.44:377][649]LogTemp: Display: LAB event=cmc_correction count=5 saved=22 error_cm=7.31
+[2026.11.23-16.59.44:377][649]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=25.422 is 2.457 LocDiff(X=-2.457 Y=0.000 Z=0.000) ClientLoc(X=-1682.156 Y=-300.000 Z=90.150) ServerLoc(X=-1679.699 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=-277.419 Y=0.000 Z=0.000) SavedMoves 22
+[2026.11.23-16.59.44:377][649]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 22 Moves, starting at Timestamp 25.439062
+[2026.11.23-16.59.44:444][653]LogTemp: Display: LAB event=cmc_correction count=6 saved=21 error_cm=0.00
+[2026.11.23-16.59.44:444][653]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=25.506 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1684.553 Y=-300.000 Z=90.150) ServerLoc(X=-1684.553 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 21
+[2026.11.23-16.59.44:444][653]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 21 Moves, starting at Timestamp 25.522394
+[2026.11.23-16.59.44:577][661]LogTemp: Display: LAB event=cmc_correction count=7 saved=22 error_cm=0.00
+[2026.11.23-16.59.44:577][661]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=25.622 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1684.553 Y=-300.000 Z=90.150) ServerLoc(X=-1684.553 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 22
+[2026.11.23-16.59.44:577][661]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 22 Moves, starting at Timestamp 25.639059
+[2026.11.23-16.59.44:694][668]LogTemp: Display: LAB event=cmc_correction count=8 saved=21 error_cm=0.00
+[2026.11.23-16.59.44:694][668]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=25.756 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1684.553 Y=-300.000 Z=90.150) ServerLoc(X=-1684.553 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 21
+[2026.11.23-16.59.44:694][668]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 21 Moves, starting at Timestamp 25.772390
+[2026.11.23-16.59.45:143][695]LogTemp: Display: LAB event=trial trial=6 csp=0
+[2026.11.23-16.59.46:444][773]LogTemp: Display: LAB event=input id=13 csp=0 time=17135527.144880 pre_speed=450.0
+[2026.11.23-16.59.46:827][796]LogTemp: Display: LAB event=baseline_ack id=13 accepted=1
+[2026.11.23-16.59.46:828][796]LogTemp: Display: LAB event=response id=13 csp=0 response_ms=383.503
+[2026.11.23-16.59.48:243][881]LogTemp: Display: LAB event=baseline_ack id=14 accepted=0
+[2026.11.23-16.59.49:144][935]LogTemp: Display: LAB event=trial trial=7 csp=0
+[2026.11.23-16.59.50:444][ 13]LogTemp: Display: LAB event=input id=15 csp=0 time=17135531.144915 pre_speed=450.0
+[2026.11.23-16.59.50:810][ 35]LogTemp: Display: LAB event=baseline_ack id=15 accepted=1
+[2026.11.23-16.59.50:810][ 35]LogTemp: Display: LAB event=response id=15 csp=0 response_ms=366.718
+[2026.11.23-16.59.52:260][122]LogTemp: Display: LAB event=baseline_ack id=16 accepted=0
+[2026.11.23-16.59.53:144][175]LogTemp: Display: LAB event=trial trial=8 csp=0
+[2026.11.23-16.59.54:444][253]LogTemp: Display: LAB event=input id=17 csp=0 time=17135535.144986 pre_speed=450.0
+[2026.11.23-16.59.54:827][276]LogTemp: Display: LAB event=baseline_ack id=17 accepted=1
+[2026.11.23-16.59.54:827][276]LogTemp: Display: LAB event=response id=17 csp=0 response_ms=383.358
+[2026.11.23-16.59.56:227][360]LogTemp: Display: LAB event=baseline_ack id=18 accepted=0
+[2026.11.23-16.59.57:144][415]LogTemp: Display: LAB event=trial trial=9 csp=0
+[2026.11.23-16.59.58:444][493]LogTemp: Display: LAB event=input id=19 csp=0 time=17135539.144937 pre_speed=450.0
+[2026.11.23-16.59.58:811][515]LogTemp: Display: LAB event=baseline_ack id=19 accepted=1
+[2026.11.23-16.59.58:811][515]LogTemp: Display: LAB event=response id=19 csp=0 response_ms=366.753
+[2026.11.23-17.00.00:210][599]LogTemp: Display: LAB event=baseline_ack id=20 accepted=0
+[2026.11.23-17.00.01:144][655]LogTemp: Display: LAB event=trial trial=10 csp=1
+[2026.11.23-17.00.02:444][733]LogTemp: Display: LAB event=input id=21 csp=1 time=17135543.144979 pre_speed=450.0
+[2026.11.23-17.00.02:461][734]LogTemp: Display: LAB event=response id=21 csp=1 response_ms=16.685
+[2026.11.23-17.00.05:144][895]LogTemp: Display: LAB event=trial trial=11 csp=1
+[2026.11.23-17.00.05:577][921]LogTemp: Display: LAB event=cmc_correction count=9 saved=23 error_cm=137.78
+[2026.11.23-17.00.05:577][921]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=46.605 is 2.275 LocDiff(X=2.275 Y=0.000 Z=0.000) ClientLoc(X=110.482 Y=-300.000 Z=90.150) ServerLoc(X=108.207 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-450.000 Y=0.000 Z=0.000) ServerVel(X=-102.398 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.05:578][921]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 46.622093
+[2026.11.23-17.00.05:677][927]LogTemp: Display: LAB event=cmc_correction count=10 saved=23 error_cm=168.67
+[2026.11.23-17.00.05:677][927]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=46.705 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=86.021 Y=-300.000 Z=90.150) ServerLoc(X=86.021 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-450.000 Y=0.000 Z=0.000) ServerVel(X=-307.195 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.05:677][927]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 46.722092
+[2026.11.23-17.00.05:777][933]LogTemp: Display: LAB event=cmc_correction count=11 saved=21 error_cm=157.50
+[2026.11.23-17.00.05:777][933]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=46.839 is 0.000 LocDiff(X=-0.000 Y=0.000 Z=0.000) ClientLoc(X=29.853 Y=-300.000 Z=90.150) ServerLoc(X=29.853 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-450.000 Y=0.000 Z=0.000) ServerVel(X=-450.000 Y=0.000 Z=0.000) SavedMoves 21
+[2026.11.23-17.00.05:777][933]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 21 Moves, starting at Timestamp 46.855423
+[2026.11.23-17.00.05:894][940]LogTemp: Display: LAB event=cmc_correction count=12 saved=23 error_cm=172.50
+[2026.11.23-17.00.05:894][940]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=46.922 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-7.646 Y=-300.000 Z=90.150) ServerLoc(X=-7.646 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-450.000 Y=0.000 Z=0.000) ServerVel(X=-450.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.05:894][940]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 46.938755
+[2026.11.23-17.00.06:444][973]LogTemp: Display: LAB event=input id=23 csp=1 time=17135547.145020 pre_speed=450.0
+[2026.11.23-17.00.06:461][974]LogTemp: Display: LAB event=response id=23 csp=1 response_ms=16.654
+[2026.11.23-17.00.09:141][132]LogTemp: Display: LAB event=trial trial=12 csp=1
+[2026.11.23-17.00.09:574][158]LogTemp: Display: LAB event=cmc_correction count=13 saved=22 error_cm=136.47
+[2026.11.23-17.00.09:574][158]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=50.619 is 1.884 LocDiff(X=-1.884 Y=0.000 Z=0.000) ClientLoc(X=-1701.872 Y=-300.000 Z=90.150) ServerLoc(X=-1699.989 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=102.398 Y=0.000 Z=0.000) SavedMoves 22
+[2026.11.23-17.00.09:575][158]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 22 Moves, starting at Timestamp 50.636108
+[2026.11.23-17.00.09:691][165]LogTemp: Display: LAB event=cmc_correction count=14 saved=22 error_cm=162.41
+[2026.11.23-17.00.09:691][165]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=50.736 is 0.569 LocDiff(X=-0.569 Y=0.000 Z=0.000) ClientLoc(X=-1672.114 Y=-300.000 Z=90.150) ServerLoc(X=-1671.545 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=341.328 Y=0.000 Z=0.000) SavedMoves 22
+[2026.11.23-17.00.09:691][165]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 22 Moves, starting at Timestamp 50.752773
+[2026.11.23-17.00.09:824][173]LogTemp: Display: LAB event=cmc_correction count=15 saved=24 error_cm=180.00
+[2026.11.23-17.00.09:824][173]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=50.836 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1628.566 Y=-300.000 Z=90.150) ServerLoc(X=-1628.566 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 24
+[2026.11.23-17.00.09:825][173]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 24 Moves, starting at Timestamp 50.852772
+[2026.11.23-17.00.09:925][179]LogTemp: Display: LAB event=cmc_correction count=16 saved=23 error_cm=172.50
+[2026.11.23-17.00.09:925][179]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=50.953 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1576.067 Y=-300.000 Z=90.150) ServerLoc(X=-1576.067 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.09:925][179]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 50.969437
+[2026.11.23-17.00.10:441][210]LogTemp: Display: LAB event=input id=25 csp=1 time=17135551.142522 pre_speed=450.0
+[2026.11.23-17.00.10:458][211]LogTemp: Display: LAB event=response id=25 csp=1 response_ms=16.637
+[2026.11.23-17.00.13:141][372]LogTemp: Display: LAB event=trial trial=13 csp=1
+[2026.11.23-17.00.13:591][399]LogTemp: Display: LAB event=cmc_correction count=17 saved=22 error_cm=141.22
+[2026.11.23-17.00.13:591][399]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=54.636 is 2.359 LocDiff(X=2.359 Y=0.000 Z=0.000) ClientLoc(X=103.215 Y=-300.000 Z=90.150) ServerLoc(X=100.856 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-450.000 Y=0.000 Z=0.000) ServerVel(X=-136.531 Y=0.000 Z=0.000) SavedMoves 22
+[2026.11.23-17.00.13:591][399]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 22 Moves, starting at Timestamp 54.652714
+[2026.11.23-17.00.13:724][407]LogTemp: Display: LAB event=cmc_correction count=18 saved=25 error_cm=183.67
+[2026.11.23-17.00.13:724][407]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=54.719 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=80.945 Y=-300.000 Z=90.150) ServerLoc(X=80.945 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-450.000 Y=0.000 Z=0.000) ServerVel(X=-307.195 Y=0.000 Z=0.000) SavedMoves 25
+[2026.11.23-17.00.13:725][407]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 25 Moves, starting at Timestamp 54.736046
+[2026.11.23-17.00.13:841][414]LogTemp: Display: LAB event=cmc_correction count=19 saved=25 error_cm=187.50
+[2026.11.23-17.00.13:841][414]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=54.836 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=32.278 Y=-300.000 Z=90.150) ServerLoc(X=32.278 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-450.000 Y=0.000 Z=0.000) ServerVel(X=-450.000 Y=0.000 Z=0.000) SavedMoves 25
+[2026.11.23-17.00.13:842][414]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 25 Moves, starting at Timestamp 54.852711
+[2026.11.23-17.00.13:941][420]LogTemp: Display: LAB event=cmc_correction count=20 saved=24 error_cm=180.00
+[2026.11.23-17.00.13:941][420]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=54.953 is 0.000 LocDiff(X=-0.000 Y=0.000 Z=0.000) ClientLoc(X=-20.222 Y=-300.000 Z=90.150) ServerLoc(X=-20.222 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-450.000 Y=0.000 Z=0.000) ServerVel(X=-450.000 Y=0.000 Z=0.000) SavedMoves 24
+[2026.11.23-17.00.13:942][420]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 24 Moves, starting at Timestamp 54.969376
+[2026.11.23-17.00.14:441][450]LogTemp: Display: LAB event=input id=27 csp=1 time=17135555.142550 pre_speed=450.0
+[2026.11.23-17.00.14:458][451]LogTemp: Display: LAB event=response id=27 csp=1 response_ms=16.635
+[2026.11.23-17.00.17:141][612]LogTemp: Display: LAB event=trial trial=14 csp=1
+[2026.11.23-17.00.18:442][690]LogTemp: Display: LAB event=input id=29 csp=1 time=17135559.142510 pre_speed=450.0
+[2026.11.23-17.00.18:459][691]LogTemp: Display: LAB event=response id=29 csp=1 response_ms=16.687
+[2026.11.23-17.00.20:375][806]LogTemp: Display: LAB event=cmc_correction count=21 saved=24 error_cm=11.60
+[2026.11.23-17.00.20:375][806]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=61.386 is 6.232 LocDiff(X=6.232 Y=0.000 Z=0.000) ClientLoc(X=101.179 Y=-300.000 Z=90.150) ServerLoc(X=94.947 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=182.839 Y=0.000 Z=0.000) SavedMoves 24
+[2026.11.23-17.00.20:375][806]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 24 Moves, starting at Timestamp 61.402611
+[2026.11.23-17.00.20:475][812]LogTemp: Display: LAB event=cmc_correction count=22 saved=23 error_cm=1.01
+[2026.11.23-17.00.20:475][812]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=61.503 is 1.013 LocDiff(X=1.013 Y=0.000 Z=0.000) ClientLoc(X=97.265 Y=-300.000 Z=90.150) ServerLoc(X=96.252 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.20:475][812]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 61.519276
+[2026.11.23-17.00.20:591][819]LogTemp: Display: LAB event=cmc_correction count=23 saved=23 error_cm=0.00
+[2026.11.23-17.00.20:591][819]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=61.619 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=96.252 Y=-300.000 Z=90.150) ServerLoc(X=96.252 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.20:591][819]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 61.635941
+[2026.11.23-17.00.20:742][828]LogTemp: Display: LAB event=cmc_correction count=24 saved=25 error_cm=0.00
+[2026.11.23-17.00.20:742][828]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=61.736 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=96.252 Y=-300.000 Z=90.150) ServerLoc(X=96.252 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 25
+[2026.11.23-17.00.20:742][828]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 25 Moves, starting at Timestamp 61.752605
+[2026.11.23-17.00.21:142][852]LogTemp: Display: LAB event=trial trial=15 csp=1
+[2026.11.23-17.00.22:442][930]LogTemp: Display: LAB event=input id=31 csp=1 time=17135563.142659 pre_speed=450.0
+[2026.11.23-17.00.22:459][931]LogTemp: Display: LAB event=response id=31 csp=1 response_ms=16.695
+[2026.11.23-17.00.25:141][ 92]LogTemp: Display: LAB event=trial trial=16 csp=1
+[2026.11.23-17.00.26:441][170]LogTemp: Display: LAB event=input id=33 csp=1 time=17135567.142532 pre_speed=450.0
+[2026.11.23-17.00.26:458][171]LogTemp: Display: LAB event=response id=33 csp=1 response_ms=16.810
+[2026.11.23-17.00.28:292][281]LogTemp: Display: LAB event=cmc_correction count=25 saved=25 error_cm=58.81
+[2026.11.23-17.00.28:292][281]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=69.287 is 11.001 LocDiff(X=11.001 Y=0.000 Z=0.000) ClientLoc(X=48.609 Y=-300.000 Z=90.150) ServerLoc(X=37.608 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 25
+[2026.11.23-17.00.28:292][281]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 25 Moves, starting at Timestamp 69.303719
+[2026.11.23-17.00.28:442][290]LogTemp: Display: LAB event=cmc_correction count=26 saved=25 error_cm=0.00
+[2026.11.23-17.00.28:442][290]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=69.437 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=85.412 Y=-300.000 Z=90.150) ServerLoc(X=85.412 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=39.109 Y=0.000 Z=0.000) SavedMoves 25
+[2026.11.23-17.00.28:442][290]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 25 Moves, starting at Timestamp 69.453751
+[2026.11.23-17.00.28:574][298]LogTemp: Display: LAB event=cmc_correction count=27 saved=25 error_cm=0.00
+[2026.11.23-17.00.28:574][298]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=69.570 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=85.412 Y=-300.000 Z=90.150) ServerLoc(X=85.412 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 25
+[2026.11.23-17.00.28:575][298]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 25 Moves, starting at Timestamp 69.587112
+[2026.11.23-17.00.28:658][303]LogTemp: Display: LAB event=cmc_correction count=28 saved=23 error_cm=0.00
+[2026.11.23-17.00.28:658][303]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=69.687 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=85.412 Y=-300.000 Z=90.150) ServerLoc(X=85.412 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=0.000 Y=0.000 Z=0.000) ServerVel(X=0.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.28:658][303]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 69.703804
+[2026.11.23-17.00.29:141][332]LogTemp: Display: LAB event=trial trial=17 csp=1
+[2026.11.23-17.00.30:441][410]LogTemp: Display: LAB event=input id=35 csp=1 time=17135571.142625 pre_speed=450.0
+[2026.11.23-17.00.30:458][411]LogTemp: Display: LAB event=response id=35 csp=1 response_ms=16.639
+[2026.11.23-17.00.33:141][572]LogTemp: Display: LAB event=trial trial=18 csp=1
+[2026.11.23-17.00.34:442][650]LogTemp: Display: LAB event=input id=37 csp=1 time=17135575.142698 pre_speed=450.0
+[2026.11.23-17.00.34:459][651]LogTemp: Display: LAB event=response id=37 csp=1 response_ms=16.541
+[2026.11.23-17.00.37:141][812]LogTemp: Display: LAB event=trial trial=19 csp=1
+[2026.11.23-17.00.38:441][890]LogTemp: Display: LAB event=input id=39 csp=1 time=17135579.142679 pre_speed=450.0
+[2026.11.23-17.00.38:458][891]LogTemp: Display: LAB event=response id=39 csp=1 response_ms=16.609
+[2026.11.23-17.00.41:142][ 52]LogTemp: Display: LAB event=trial trial=20 csp=1
+[2026.11.23-17.00.41:525][ 75]LogTemp: Display: LAB event=cmc_correction count=29 saved=21 error_cm=115.31
+[2026.11.23-17.00.41:525][ 75]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=82.590 is 3.431 LocDiff(X=-3.431 Y=0.000 Z=0.000) ClientLoc(X=-1726.190 Y=-300.000 Z=90.150) ServerLoc(X=-1722.759 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=68.281 Y=0.000 Z=0.000) SavedMoves 21
+[2026.11.23-17.00.41:525][ 75]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 21 Moves, starting at Timestamp 82.606560
+[2026.11.23-17.00.41:692][ 85]LogTemp: Display: LAB event=cmc_correction count=30 saved=23 error_cm=169.52
+[2026.11.23-17.00.41:692][ 85]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=82.723 is 0.996 LocDiff(X=-0.996 Y=0.000 Z=0.000) ClientLoc(X=-1693.164 Y=-300.000 Z=90.150) ServerLoc(X=-1692.168 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=341.406 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.41:692][ 85]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 82.739922
+[2026.11.23-17.00.41:775][ 90]LogTemp: Display: LAB event=cmc_correction count=31 saved=23 error_cm=172.54
+[2026.11.23-17.00.41:775][ 90]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=82.807 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1656.676 Y=-300.000 Z=90.150) ServerLoc(X=-1656.676 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.41:775][ 90]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 82.823273
+[2026.11.23-17.00.41:908][ 98]LogTemp: Display: LAB event=cmc_correction count=32 saved=23 error_cm=172.54
+[2026.11.23-17.00.41:908][ 98]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=82.940 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1596.663 Y=-300.000 Z=90.150) ServerLoc(X=-1596.663 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.41:908][ 98]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 82.956635
+[2026.11.23-17.00.42:441][130]LogTemp: Display: LAB event=input id=41 csp=1 time=17135583.142701 pre_speed=450.0
+[2026.11.23-17.00.42:459][131]LogTemp: Display: LAB event=response id=41 csp=1 response_ms=16.595
+[2026.11.23-17.00.42:871][153]LogTemp: Display: LAB event=owner_policy denied=1
+[2026.11.23-17.00.42:887][154]LogTemp: Display: LAB event=cmc_correction count=33 saved=20 error_cm=314.72
+[2026.11.23-17.00.42:887][154]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=83.924 is 3.415 LocDiff(X=3.415 Y=0.000 Z=0.000) ClientLoc(X=-1150.654 Y=-300.000 Z=90.150) ServerLoc(X=-1154.069 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=625.808 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 20
+[2026.11.23-17.00.42:887][154]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 20 Moves, starting at Timestamp 83.940178
+[2026.11.23-17.00.42:955][158]LogTemp: Display: LAB event=cmc_correction count=34 saved=20 error_cm=170.80
+[2026.11.23-17.00.42:955][158]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=83.990 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1124.062 Y=-300.000 Z=90.150) ServerLoc(X=-1124.062 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 20
+[2026.11.23-17.00.42:955][158]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 20 Moves, starting at Timestamp 84.006859
+[2026.11.23-17.00.43:021][162]LogTemp: Display: LAB event=cmc_correction count=35 saved=21 error_cm=157.53
+[2026.11.23-17.00.43:021][162]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=84.086 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1080.790 Y=-300.000 Z=90.150) ServerLoc(X=-1080.790 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 21
+[2026.11.23-17.00.43:021][162]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 21 Moves, starting at Timestamp 84.103020
+[2026.11.23-17.00.43:138][169]LogTemp: Display: LAB event=cmc_correction count=36 saved=22 error_cm=165.04
+[2026.11.23-17.00.43:138][169]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=84.186 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1035.780 Y=-300.000 Z=90.150) ServerLoc(X=-1035.780 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 22
+[2026.11.23-17.00.43:138][169]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 22 Moves, starting at Timestamp 84.203041
+[2026.11.23-17.00.43:221][174]LogTemp: Display: LAB event=cmc_correction count=37 saved=24 error_cm=180.04
+[2026.11.23-17.00.43:221][174]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=84.236 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1013.275 Y=-300.000 Z=90.150) ServerLoc(X=-1013.275 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 24
+[2026.11.23-17.00.43:221][174]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 24 Moves, starting at Timestamp 84.253052
+[2026.11.23-17.00.43:271][177]LogTemp: Display: LAB event=cmc_correction count=38 saved=23 error_cm=172.54
+[2026.11.23-17.00.43:271][177]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=84.303 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-983.269 Y=-300.000 Z=90.150) ServerLoc(X=-983.269 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=450.000 Y=0.000 Z=0.000) ServerVel(X=450.000 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.43:271][177]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 84.319733
+[2026.11.23-17.00.45:152][287]LogTemp: Display: LAB event=trial trial=21 csp=1
+[2026.11.23-17.00.45:552][311]LogTemp: Display: LAB event=owner_policy denied=0
+[2026.11.23-17.00.46:452][365]LogTemp: Display: LAB event=input id=43 csp=1 time=17135587.153462 pre_speed=450.0
+[2026.11.23-17.00.46:469][366]LogTemp: Display: LAB event=response id=43 csp=1 response_ms=16.645
+[2026.11.23-17.00.46:869][390]LogTemp: Display: LAB event=cmc_correction count=39 saved=23 error_cm=302.99
+[2026.11.23-17.00.46:869][390]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=87.902 is 3.290 LocDiff(X=3.290 Y=0.000 Z=0.000) ClientLoc(X=-1033.741 Y=-300.000 Z=90.150) ServerLoc(X=-1037.031 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-900.000 Y=0.000 Z=0.000) ServerVel(X=-518.281 Y=0.000 Z=0.000) SavedMoves 23
+[2026.11.23-17.00.46:869][390]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 23 Moves, starting at Timestamp 87.918488
+[2026.11.23-17.00.46:985][397]LogTemp: Display: LAB event=cmc_correction count=40 saved=22 error_cm=328.05
+[2026.11.23-17.00.46:985][397]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=88.035 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1126.639 Y=-300.000 Z=90.150) ServerLoc(X=-1126.639 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-900.000 Y=0.000 Z=0.000) ServerVel(X=-791.406 Y=0.000 Z=0.000) SavedMoves 22
+[2026.11.23-17.00.46:985][397]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 22 Moves, starting at Timestamp 88.051849
+[2026.11.23-17.00.47:118][405]LogTemp: Display: LAB event=cmc_correction count=41 saved=24 error_cm=360.08
+[2026.11.23-17.00.47:119][405]LogNetPlayerMovement: Warning: *** Client: Error for LabCharacter_2147482334 at Time=88.135 is 0.000 LocDiff(X=0.000 Y=0.000 Z=0.000) ClientLoc(X=-1214.642 Y=-300.000 Z=90.150) ServerLoc(X=-1214.642 Y=-300.000 Z=90.150) NewBase: PredictionArena:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0 NewBone: None ClientVel(X=-900.000 Y=0.000 Z=0.000) ServerVel(X=-900.000 Y=0.000 Z=0.000) SavedMoves 24
+[2026.11.23-17.00.47:119][405]LogNetPlayerMovement: Verbose: ClientUpdatePositionAfterServerUpdate Replaying 24 Moves, starting at Timestamp 88.151871
+[2026.11.23-17.00.49:153][527]LogTemp: Display: LAB event=trial trial=22 csp=1
+[2026.11.23-17.00.50:452][605]LogTemp: Display: LAB event=input id=45 csp=1 time=17135591.153520 pre_speed=450.0
+[2026.11.23-17.00.50:469][606]LogTemp: Display: LAB event=response id=45 csp=1 response_ms=16.593
+[2026.11.23-17.00.53:152][767]LogTemp: Display: LAB event=auto_complete corrections=41 replays=938
+[2026.11.23-17.00.53:152][767]LogWindows: FPlatformMisc::RequestExit(0, <NoCallSiteInfo>)
+[2026.11.23-17.00.53:152][767]LogWindows: FPlatformMisc::RequestExitWithStatus(0, 0, <NoCallSiteInfo>)
+[2026.11.23-17.00.53:153][767]LogCore: Engine exit requested (reason: Win RequestExit)
+[2026.11.23-17.00.53:153][768]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2026.11.23-17.00.53:155][768]LogInit: Display: PreExit Game.
+[2026.11.23-17.00.53:156][768]LogWorld: BeginTearingDown for /Game/Maps/PredictionArena
+[2026.11.23-17.00.53:156][768]LogNet: World NetDriver shutdown IpNetDriver_2147482467 [GameNetDriver]
+[2026.11.23-17.00.53:156][768]LogNet: DestroyNamedNetDriver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_2147482467 
+[2026.11.23-17.00.53:156][768]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_2147482404, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_2147482467, IsServer: NO, PC: PlayerController_2147482341, Owner: PlayerController_2147482341, UniqueId: NULL:DESKTOP-R17IQIJ-D1F1DD1F4EE30331B755D79C0C45326E, Channels: 11, Time: 2026.11.23-17.00.53
+[2026.11.23-17.00.53:156][768]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_2147482404, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_2147482467, IsServer: NO, PC: PlayerController_2147482341, Owner: PlayerController_2147482341, UniqueId: NULL:DESKTOP-R17IQIJ-D1F1DD1F4EE30331B755D79C0C45326E
+[2026.11.23-17.00.53:156][768]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_2147482467 shut down
+[2026.11.23-17.00.53:156][768]LogWorld: UWorld::CleanupWorld for PredictionArena, bSessionEnded=true, bCleanupResources=true
+[2026.11.23-17.00.53:156][768]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.23-17.00.53:157][768]LogRuntimeTelemetry: Recording EnginePreExit events
+[2026.11.23-17.00.53:755][768]LogSlate: Request Window 'PredictionLab (64-bit Development PCD3D_SM5) ' being destroyed
+[2026.11.23-17.00.53:755][768]LogSlate: Window 'PredictionLab (64-bit Development PCD3D_SM5) ' being destroyed
+[2026.11.23-17.00.53:756][768]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2026.11.23-17.00.53:758][768]LogExit: Preparing to exit.
+[2026.11.23-17.00.53:763][768]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.23-17.00.53:764][768]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2026.11.23-17.00.53:765][768]LogExit: Game engine shut down
+[2026.11.23-17.00.53:766][768]LogRenderer: Forcing update for all mesh draw commands: SkyLight change
+[2026.11.23-17.00.53:787][768]LogExit: Object subsystem successfully closed.
+[2026.11.23-17.00.53:790][768]LogShaderLibrary: Display: Closing logical shader library 'Global' with 1 components
+[2026.11.23-17.00.53:795][768]LogShaderLibrary: Display: Closing logical shader library 'PredictionLab' with 1 components
+[2026.11.23-17.00.53:800][768]LogChaosDD: Chaos Debug Draw Shutdown
+[2026.11.23-17.00.53:802][768]LogNFORDenoise: NFORDenoise function shutting down
+[2026.11.23-17.00.53:802][768]RenderDocPlugin: plugin has been unloaded.
+[2026.11.23-17.00.53:802][768]LogPakFile: Destroying PakPlatformFile
+[2026.11.23-17.00.53:851][768]LogD3D12RHI: ~FD3D12DynamicRHI
+[2026.11.23-17.00.53:854][768]LogExit: Exiting.
+[2026.11.23-17.00.53:863][768]Log file closed, 11/23/26 20:00:53
